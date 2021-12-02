@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">	
+	<link rel="icon" href="img/favicon.ico">
+	<title>Bobaflow | Contact Me</title>
+</head>
+<body class="home">
+	<a class = "skip" href="#main_content">Skip to Main Content</a>
+	<header>
+		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
+		<nav>
+			<ul class = "nav_links">
+				<li class="nav_item"><a href = "index.html">Home</a></li>
+				<li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
+				<li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
+				<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
+				<li class="nav_item"><a href = "contact.html" class = "active">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id = "main_content">
+		<h1>Let's Chat!</h1>
+		<div id = "contact_head">
+        <div class = "contact_emily">
+			<img src = "img/citibike_emily.jpg" alt="Emily in New York City with Citi Bike">
+		</div>
+		<div class="container">
+            <form action="action_page.php">
+          
+              <label for="name">First and Last Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+          
+              <label for="type">Type</label>
+              <select id="type" name="type">
+                <option value="question">Question</option>
+                <option value="issue">Issue with Website</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+		</div>
+	</main>
+
+	<footer>
+		<p>Bobaflow &copy; 2021</p>
+		<p>Made with Love ♥️</p>
+	</footer>
+</body>
+</html>

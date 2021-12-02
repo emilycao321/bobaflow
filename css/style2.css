@@ -1,0 +1,429 @@
+a.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    border: 2px dotted #1C567D;
+    border-radius: 5px;
+}
+
+a.skip:focus {
+    top:10px;
+    left:10px;
+    border: 2px dotted #1C567D;
+}
+
+nav a:focus {
+    outline: none;
+    border: 2px dotted #1C567D;
+    border-radius: 5px;
+}
+
+*:focus {
+    outline: none;
+    /* border: 2px dotted #1C567D; */
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    background-color: #fef6ed;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:left;
+}
+
+nav li{
+    display:inline;
+    padding-bottom: 5px;
+  }
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: left;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+a:link, a:visited {
+    font-weight: 600;
+    color: #1C567D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9e6429;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+a::selection {
+    outline: none;
+    border: none;
+}
+
+nav .active {
+    color: #9e6429;
+    font-weight: 800;
+    text-decoration: underline 3px;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 2.25rem;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+p, p.boba_subtext{
+    font-size: 1.2rem;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+
+/* about me and home  */
+p.advisory{
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.home_emily {
+    padding-bottom: 20px;
+}
+
+
+/* ann arbor & nyc specific */
+p.boba_subtext {
+    padding-bottom: 20px;
+}
+
+.annarbor_boba, .nyc_boba {
+    margin-bottom: 75px;
+}
+
+p.bobastore_text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.top3 {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+ }
+
+ .top3 li {
+    padding-left: 1rem;
+    text-indent: -0.75rem;
+}
+
+.top3 li:before {
+    content: "🧋 "
+}
+
+.fa-star-o,
+.checked {
+    color: orange;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.btn {
+    background-color: #1C567D; 
+    color: white; 
+    font-size: 1rem;
+    border-radius: 5px;
+}
+  
+.btn:hover {
+    background-color:#9e6429;
+    color: white;
+}
+
+/* GRID */
+.wrapper {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+}
+
+.chatime_purple, .dingtea_slogan, .slogan_lightbold {
+    font-weight: 700;
+}
+
+.dingtea_slogan {
+    color: #AD5A00;
+}
+.chatime_purple{
+    color: #4f1a6c;
+}
+.bobateahouse_img, .chatime_img, .coco_img, .dingtea_img,
+.quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bobateahouse_title, .chatime_title, .coco_title, .dingtea_title,
+.quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
+    grid-column: 1 / -1;
+    ;
+}
+
+.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
+.vivi_img, .yaya_img {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
+.vivi_img, .yaya_img {
+    grid-column: 1 / -1;
+    ;
+}
+
+
+
+/* about me */
+ a.bubbletea_store_sharetea:link, a.bubbletea_store_sharetea:visited{
+    color: #fd520e;
+    font-weight: 800;
+}
+
+a.bubbletea_store_gongcha:link, a.bubbletea_store_gongcha:visited{
+    color: #e50000;
+    font-weight: 800;
+}
+
+a.aboutme_umich:hover{
+    color: #e7820f;
+
+}
+.about-image {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p.padtop_advisory {
+    font-size: .7rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+
+/* contact form */
+
+/* footer */
+footer {
+    padding-top: 20vh;
+    text-align: center;
+    
+}
+
+.container .inner .panel.panel-right {
+    margin-right: -10%;
+    background: #1B1B1B;
+  }
+  
+  .container .inner .panel.panel-right .panel-content .form {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+  }
+  
+  .container .inner .panel.panel-right .panel-content .form h1 {
+    display: block;
+    margin: 0 0 45px 0;
+    color: #B1B1B1;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  
+  .group { 
+    position: relative; 
+    margin-bottom: 25px; 
+  }
+  
+  input {
+    font-size: 2rem;
+    height: 6rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: #B1B1B1;
+    background: rgba(0,0,0,0);
+    opacity: 0.5;
+    transition: 0.2s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    opacity: 1;
+  }
+  
+  label {
+    color: black; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    opacity: 0.5;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top: -10px;
+    font-size: 12px;
+    color: #B1B1B1;
+    opacity: 1;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  
+  a.send-btn {
+    float: right;
+    color: #B1B1B1;
+    transition: 0.2s ease;
+  }
+  
+  a.send-btn:hover {
+    color: #FAFAFA;
+    cursor: pointer;
+  }
+  
+ 
+@media screen and (prefers-reduced-motion: reduce){
+/*Turn off scroll*/
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+/*Turn off transition*/
+.skip a{
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+}
+
+/*Turn off parallax*/
+header{
+    background-attachment: initial;
+}
+}
+/* large screen */
+@media screen and (min-width: 850px){
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:right;
+        align-items:right;
+        align-content: flex-start;
+        left: 0;
+        right: 0;
+    }
+    
+    .nav_links{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nav_item{
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+}
