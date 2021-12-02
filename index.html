@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
 	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">	
@@ -18,21 +19,37 @@
 
 	gtag('config', 'G-ETYPDBNS7J');
 	</script>
+	<script src="js/myscripts.js"></script>
 	<title>Bobaflow | Home</title>
 </head>
 <body class="home">
-	<a class = "skip" href="#main_content">Skip to Main Content</a>
 	<header>
+		<a class = "skip" href="#main_content">Skip to Main Content</a>
+		<span class="d-block d-sm-none menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
+	<div class="logo_center">
+		<div class="the_logo">
 		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-		<nav>
-			<ul class = "nav_links">
-				<li class="nav_item"><a href = "index.html" class = "active">Home</a></li>
-				<li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
-				<li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
-				<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
-				<li class="nav_item"><a href = "contact.html" >Contact</a></li>
-			</ul>
-		</nav>
+		</div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="sidenav-link active" href="index.html"><span><strong>HOME</strong></span></a>
+            <a class="sidenav-link" href="annarbor_boba.html"><span>Ann Arbor</span></a>
+            <a class="sidenav-link" href="newyork_boba.html"><span>New York City</span></a>
+            <a class="sidenav-link" href="aboutme.html"><span>About Me</span></a>
+		</div>
+		<div class = "large_nav_header">
+		<a class = "navbar_logo" href = "index.html"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
+			<nav>
+				<ul class = "nav_links">
+					<li class="nav_item"><a href = "index.html" class = "active">Home</a></li>
+					<li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
+					<li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
+					<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
+					<li class="nav_item"><a href = "contact.html" >Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	
 	<main id = "main_content">
@@ -73,9 +90,11 @@
 	<div id ="home_head">
 			<p>Milk tea isn't only drank by Asians. Many people of different ethnicity drink bubble tea. Some will love them and others will question them. Bubble tea is great way to spread a significant part of not only Taiwanese culture, but many Asian culture.
 			<br> <br>Here's a video of CantoMando spreading the a staple part of the Asian culture.</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ULsaeSSCrcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			
 		</div>
+	<div class = "youtube-video">
+	<iframe src="https://www.youtube.com/embed/ULsaeSSCrcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p class = "advisory">*Didn't intend to promote Grammarly, but I guess I am. XD*</p><br>
 	</main>
 
 	<footer>
