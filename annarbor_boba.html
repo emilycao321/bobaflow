@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +26,12 @@
 <body class="home">
 	<header>
 		<a class = "skip" href="#main_content">Skip to Main Content</a>
-		<span class="d-block d-sm-none menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
+		<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
 	<div class="logo_center">
 		<div class="the_logo">
 		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-		</div>
+		<span class="fa-solid fa-circle-half-stroke"></span>
+	</div>
 	</div>
 	<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -49,6 +51,7 @@
 					<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
 					<li class="nav_item"><a href = "contact.html">Contact</a></li>
 				</ul>
+				<i class="fa-solid fa-circle-half-stroke"></i>
 			</nav>
 		</div>
 	</header>
@@ -88,7 +91,7 @@
 									<li>Peach Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://www.orderbobateahouseannaarbor.com/','_blank')">Order Online</button>
+								<button class="button" onclick=" window.open('https://www.orderbobateahouseannaarbor.com/','_blank')"><span>Order Online</span></button>
 							</div>
 					</div>
 
@@ -113,7 +116,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.5 (233 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.5 (233 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Black Tie Milk Tea</li>
@@ -121,8 +124,11 @@
 									<li>Strawberry Au Lait with Mousse</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11fksl5lzm&g2lbs=ALgbXSpPHOqlIjGYb-b6QMzeqHxY9IkYdT7L2UDAGAu-oDwnWdYwyKCJhYy6ou6PgHC5wvj0RBd0&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=eACEYarpCPSQxc8PiuSzkAc&fo_s=OA,AH&orderType=2&sei=CeDYmGKx9bmrEQxeZGhqB3TW&utm_campaign&utm_source=search','_blank')"> Order Online </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/Chatime-5fc9292d62dd3000d6dcd676?openAddressSelectorIfChain=true','_blank')"> Order on Snackpass </button>
+								
+								<div><button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11fksl5lzm&g2lbs=ALgbXSpPHOqlIjGYb-b6QMzeqHxY9IkYdT7L2UDAGAu-oDwnWdYwyKCJhYy6ou6PgHC5wvj0RBd0&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=eACEYarpCPSQxc8PiuSzkAc&fo_s=OA,AH&orderType=2&sei=CeDYmGKx9bmrEQxeZGhqB3TW&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								</div>
+								<div><button class="button" onclick=" window.open('https://order.snackpass.co/Chatime-5fc9292d62dd3000d6dcd676?openAddressSelectorIfChain=true','_blank')"><span>Order on Snackpass</span></button>
+								</div>
 							</div>
 						</div>
 						<div class="coco_img">
@@ -146,7 +152,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.6 (244 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.6 (244 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Milk Tea with Sago</li>
@@ -154,9 +160,10 @@
 									<li>Taro Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://cocoteaannarbor.com/','_blank')"> Order Here </button>
+								<button class="button" onclick=" window.open('https://cocoteaannarbor.com/','_blank')"><span>Order Online</span></button>
 							</div>
 						</div>
+
 						<div class="dingtea_img">
 							<!--https://www.bestfoodfeed.com/p/54866-->
 						<img src="img/annarbor/dingtea.jpeg" alt="Ann Arbor Ding Tea" />
@@ -177,7 +184,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.3 (99 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.3 (99 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Hokkaido Oolong Milk Tea</li>
@@ -185,7 +192,7 @@
 									<li>Hazelnut Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j4y8t0wy&g2lbs=ALgbXSpzyge4LXUPcFHt6a3SttGpvEJOTjM1j7KynZVauqyQg0CyuuC3HrlUYTuzftENjmLHSGy4&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9_6DYc-0Kte6tQalz7OQAg&fo_s=OA,AH&sei=CQrVmVpD5wWZEelrZ6L2sdzw&utm_campaign&utm_source=search','_blank')"> Order Here </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j4y8t0wy&g2lbs=ALgbXSpzyge4LXUPcFHt6a3SttGpvEJOTjM1j7KynZVauqyQg0CyuuC3HrlUYTuzftENjmLHSGy4&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9_6DYc-0Kte6tQalz7OQAg&fo_s=OA,AH&sei=CQrVmVpD5wWZEelrZ6L2sdzw&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
 							</div>
 						</div>
 						<div class="quickly_img">
@@ -209,7 +216,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.5 (119 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.5 (119 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Rose Milk Tea</li>
@@ -217,8 +224,8 @@
 									<li>Panda Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11hpgtm8gc&g2lbs=ALgbXSoWKenTFjQLnjTFDmrw5yhhBrg_f36Bpt0BCX8DpuXH2hTnGqCtyZExw2RXqiDT8WXUEal-&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=Yv-DYaHmEpm2tAa4zp3oCg&sei=CSPcJCriuDS-EfWNrjpL1yRS&utm_campaign&utm_source=search&addressId&orderType=2&partnerId=02904582899329029890&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA%2CAH&dineInLocationId','_blank')"> Order Here </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/Quickly-Boba-Cafe-Ann-Arbor-5fe0ea1037e52e00da1666bb?openAddressSelectorIfChain=true','_blank')"> Order on Snackpass </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11hpgtm8gc&g2lbs=ALgbXSoWKenTFjQLnjTFDmrw5yhhBrg_f36Bpt0BCX8DpuXH2hTnGqCtyZExw2RXqiDT8WXUEal-&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=Yv-DYaHmEpm2tAa4zp3oCg&sei=CSPcJCriuDS-EfWNrjpL1yRS&utm_campaign&utm_source=search&addressId&orderType=2&partnerId=02904582899329029890&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA%2CAH&dineInLocationId','_blank')"><span>Order Online</span></button>
+								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Quickly-Boba-Cafe-Ann-Arbor-5fe0ea1037e52e00da1666bb?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
 						<div class="sharetea_img">
@@ -241,7 +248,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.5 (89 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.5 (89 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Mango Green Milk Tea with Pudding</li>
@@ -249,8 +256,8 @@
 									<li>Okinawa Milk Tea with Mini Pearls</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11qlj8m65t&g2lbs=ALgbXSoqCS3DqhlU-lK9tw0V-niPU6u3D7__E2cNXiknj07-78mPIncjhheSYept-awmCsP1Ghl1&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=PP-DYb72L5CDtQb7sYvoCg&fo_s=OA,AH&sei=CdtXGyk2_GqQEQXuRfl_1-B-&utm_campaign&utm_source=search','_blank')"> Order Here </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/Sharetea-5f83195dfc988e00d26f6732','_blank')"> Order on Snackpass </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11qlj8m65t&g2lbs=ALgbXSoqCS3DqhlU-lK9tw0V-niPU6u3D7__E2cNXiknj07-78mPIncjhheSYept-awmCsP1Ghl1&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=PP-DYb72L5CDtQb7sYvoCg&fo_s=OA,AH&sei=CdtXGyk2_GqQEQXuRfl_1-B-&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Sharetea-5f83195dfc988e00d26f6732','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
 						<div class="sweeting_img">
@@ -273,7 +280,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.5 (307 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.5 (307 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Sakura Milk Tea</li>
@@ -281,8 +288,8 @@
 									<li>Piña Colada Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b6_n69rm&g2lbs=ALgbXSrqepfSdpZnUD6Ac635Ea3JFQnLArUqRBuLa72hkRZkNoRkdXsvAzsvZXYGfOevEtJq30iz&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=kv-DYcOTG4q6tAbU5Y6IAQ&fo_s=OA,AH&orderType=2&sei=CdYXGz0lOvCaEXUKdsOg3caH&utm_campaign&utm_source=search','_blank')"> Order Here </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/Sweeting-1205-S-University-Ave-5f888d8d64aedb00c7b4ca64?openAddressSelectorIfChain=true','_blank')"> Order on Snackpass </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b6_n69rm&g2lbs=ALgbXSrqepfSdpZnUD6Ac635Ea3JFQnLArUqRBuLa72hkRZkNoRkdXsvAzsvZXYGfOevEtJq30iz&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=kv-DYcOTG4q6tAbU5Y6IAQ&fo_s=OA,AH&orderType=2&sei=CdYXGz0lOvCaEXUKdsOg3caH&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Sweeting-1205-S-University-Ave-5f888d8d64aedb00c7b4ca64?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
 						<div class="teaninja_img">
@@ -304,7 +311,7 @@
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star-half-o checked"></span> 4.6 (141 Google reviews)</p>
+								<span class="fa fa-star-half-alt checked"></span> 4.6 (141 Google reviews)</p>
 								<h3>My Top 3 Faves</h3>
 								<ul class ="top3">
 									<li>Brown Sugar Crème Brûlée With Milk Tea</li>
@@ -312,8 +319,8 @@
 									<li>Red Bean Matcha Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j1n8gmxq&g2lbs=ALgbXSp77e6ZyAHsVA_tZcf5G8qCLJKJ2tSlX-6u5a56VijQPKpnI57pzlct_JQCz8bFrB_tv68O&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=zP-DYdrKK9u6tQbq4YSoCw&fo_s=OA,AH&orderType=2&sei=CcNDDzEnM9qNEU7g2QSdkFw_&utm_campaign&utm_source=search','_blank')"> Order Here </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/Tea-Ninja-5e72d420d5f2cc00dc5aad89?openAddressSelectorIfChain=true','_blank')"> Order on Snackpass </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j1n8gmxq&g2lbs=ALgbXSp77e6ZyAHsVA_tZcf5G8qCLJKJ2tSlX-6u5a56VijQPKpnI57pzlct_JQCz8bFrB_tv68O&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=zP-DYdrKK9u6tQbq4YSoCw&fo_s=OA,AH&orderType=2&sei=CcNDDzEnM9qNEU7g2QSdkFw_&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Tea-Ninja-5e72d420d5f2cc00dc5aad89?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
 						<div class="unitea_img">
@@ -344,8 +351,8 @@
 									<li>Pumpkin Spice Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="btn" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11rgbjnq5y&g2lbs=ALgbXSoLOFW0W3RBllG8of3YkRWy1F8vdFh3YOEfgLUR2Aqq1eYVyUCB8tUG4-peIQAv8zkWE71b&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=5f-DYbzbDo3ctQaxq5Aw&fo_s=OA,AH&orderType=2&sei=CefnbmLCR5W7Eb4T7v_A54te&utm_campaign&utm_source=search','_blank')"> Order Here </button>
-								<button class="btn" onclick=" window.open('https://order.snackpass.co/UniTea-60ec8043846d0400ca195999?openAddressSelectorIfChain=true','_blank')"> Order on Snackpass </button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11rgbjnq5y&g2lbs=ALgbXSoLOFW0W3RBllG8of3YkRWy1F8vdFh3YOEfgLUR2Aqq1eYVyUCB8tUG4-peIQAv8zkWE71b&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=5f-DYbzbDo3ctQaxq5Aw&fo_s=OA,AH&orderType=2&sei=CefnbmLCR5W7Eb4T7v_A54te&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<br><button class="button" onclick=" window.open('https://order.snackpass.co/UniTea-60ec8043846d0400ca195999?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
 					</div>
