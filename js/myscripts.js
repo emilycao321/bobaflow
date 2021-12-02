@@ -6,3 +6,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+// dark & light mode
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
