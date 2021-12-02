@@ -8,8 +8,24 @@ a.skip {
     display: none;
 }
 
-header > a {
-    width: 40%;
+div.logo_center {
+    text-align: center;
+}
+
+img.bobaflow_logo {
+    width: 50%;
+    text-align: center;
+}
+
+img.bobaflow_logo_large {
+    display: none;
+}
+
+div.the_logo > a {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -17,55 +33,10 @@ header {
     background: #fef6ed;
     top: 0px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
-nav li{
-    display:inline;
-    padding-bottom: 10px;
-  }
-
-.nav_links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-}
-
-nav{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-a:link, a:visited {
-    font-weight: 600;
-    color: #1C567D;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #9e6429;
-    text-decoration: underline;
-    -webkit-text-decoration-style: dotted;
-            text-decoration-style: dotted;
-  }
-
-a::selection {
-    outline: none;
-    border: none;
-}
-
-nav .active {
-    color: #9e6429;
-    font-weight: 800;
-    text-decoration: underline 3px;
-    text-transform: uppercase;
-
+nav {
+    display: none;
 }
 
 h1 {
@@ -332,10 +303,18 @@ p.padtop_advisory {
     transform: rotateY(180deg);
   }
 
-
+.youtube-video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+}
 /* youtube video */
-  iframe {
+  .youtube-video iframe {
       border-radius: 10px;
+      position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
   }
 
 
@@ -390,6 +369,65 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+  /* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1C567D;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sidenav-link{
+    font-weight: 800;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #FFC342;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 4rem;
+    margin-left: 50px;
+}
+
+/* sidenav active menu */
+.sidenav a.active {
+    color: #FFC342;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+span.menu {
+    font-size: 1.75rem;
+    position: absolute;
+    color: black;
+    cursor: pointer;
+}
+
+
 @media screen and (prefers-reduced-motion: reduce){
 /*Turn off scroll*/
 html{
@@ -422,35 +460,113 @@ header{
         z-index: 1;
         border-radius: 5px;
     }
+
+    nav {
+        display: inline;
+    }
+
+    span.menu {
+        display: none;
+    }
     
     a.skip:focus {
         top:10px;
         left:10px;
     }
 
-    body {
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }
-    header > a {
-        width: 25%;
-    }
-    header {
-        position: sticky;
-        z-index: 9999;
-    }
-    
-    .nav_links{
+    .large_nav_header{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .nav_item{
-        padding: 1.2vw;
-        font-size: .9rem;
+    img.bobaflow_logo {
+        display: none;
     }
+
+    .navbar_logo{
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        width: 20%;
+    }
+
+
+    img.bobaflow_logo_large{
+        display: inline-block;
+    }
+    
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header > a.navbar_logo {
+        width: 25%;
+    }
+    header {
+        position: sticky;
+        z-index: 9999;
+    }
+
+    nav li{
+        display:inline;
+        padding-bottom: 10px;
+      }
+    
+    .nav_links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
+    }
+    
+    nav{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+    .nav_item{
+        padding: 10px;
+        font-size: .9rem;
+
+    }
+
+    a:link, a:visited {
+        font-weight: 600;
+        color: #1C567D;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #9e6429;
+        text-decoration: underline;
+        -webkit-text-decoration-style: dotted;
+                text-decoration-style: dotted;
+      }
+    
+    a::selection {
+        outline: none;
+        border: none;
+    }
+    
+    nav .active {
+        color: #FFC342;
+        font-weight: 800;
+        text-decoration: underline 3px;
+        text-transform: uppercase;
+        background-color: #1C567D;
+        padding: 10px;
+    }
+    
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+
     .wrapper {
         grid-gap: 2rem;
         grid-template-columns: 1fr 2fr;
@@ -505,7 +621,7 @@ header{
         grid-template-columns: auto auto;
         grid-template-rows: auto;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         }
     #home_head2 {
         display: grid;
@@ -577,14 +693,19 @@ header{
         padding-top: 10vh;
     }
 
-    /* larger view */
+    /* larger screen view */
     @media screen and (min-width: 1400px){
         body{
-            width: 1400px;
-            margin: 5rem auto;
+            width:1024px;
+            margin: 0 auto;
+            margin-top: 3rem;
         }
         .nav_item {
+            padding: 20px;
             font-size: 1.2rem;
+        }
+        iframe {
+            width:100%;
         }
     }
 }
