@@ -5,7 +5,21 @@ body {
 }
 
 a.skip {
-    display: none;
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    border: 4px dotted #9e6429;
+    border-radius: 5px;
+}
+
+a.skip:focus {
+    top:10px;
+    left:10px;
 }
 
 div.logo_center {
@@ -128,59 +142,6 @@ p.bobastore_text {
 .checked {
     color: orange;
 }
-
-/* button {
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    color: black;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
-.btn {
-    background-color: #1C567D; 
-    color: white; 
-    font-size: 1rem;
-    border-radius: 5px;
-} */
-  
-/* .btn:hover {
-    background-color:#9e6429;
-    color: white;
-} */
-
-/* .btn span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-
-  .button span:after {
-    content: ' \00BB';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-
-  .btn:hover {
-    background-color:#9e6429;
-  }
-  .btn:hover span {
-    padding-right: 25px;
-  }
-  
-  .btn:hover span:after {
-    opacity: 1;
-    right: 0;
-  } */
 
   button {
     font-family: 'Montserrat', sans-serif;
@@ -501,10 +462,14 @@ h1.contact-title{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #1C567D;
+    background-color: #7fbee9;
     overflow-x: hidden;
     padding-top: 100px;
     transition: 0.5s;
+}
+
+.nav_blue {
+    background-color: black;
 }
 
 /* The navigation menu links */
@@ -512,7 +477,7 @@ h1.contact-title{
     padding: 10px 10px 10px 32px;
     text-decoration: none;
     font-size: 1.3rem;
-    color: white;
+    color: black;
     display: block;
     transition: 0.3s;
 }
@@ -537,7 +502,7 @@ h1.contact-title{
 
 /* sidenav active menu */
 .sidenav a.active {
-    color: #FFC342;
+    color: black;
     text-decoration: underline;
     text-underline-position: under;
     text-transform: uppercase;
@@ -552,48 +517,19 @@ span.menu {
 }
 
 
-@media screen and (prefers-reduced-motion: reduce){
-/*Turn off scroll*/
-html{
-    scroll-behavior: auto; /* Removes scroll animation */
-}
 
-/*Turn off transition*/
-.skip a{
-    -webkit-transition: initial; /* sets to default setting */
-    transition: initial; /* sets to default setting */
-}
-
-/*Turn off parallax*/
-h1.contact-title{
-    background-attachment: initial;
-}
-    #pic-ani{
-        animation: none;
-}
-button, .button span, .button span:after {
-    -webkit-transition: initial;
-    transition: initial;
-}
-.button:hover {
-    background-color: initial;
-  }
-}
 
 
 /* tablet screen */
 @media screen and (min-width: 750px){
-    /* a.skip {
-        background: white;
-        left: 0;
-        padding: 6px;
-        position: absolute;
-        top: -40px;
-        -webkit-transition: top 1s ease-out;
-        transition: top 1s ease-out;
-        z-index: 1;
-        border-radius: 5px;
-    } */
+    a.skip {
+        top: -100px;
+    }
+    
+    a.skip:focus {
+        top:-40px;
+        left:0px;
+    }
     button {
         font-size: 1.2rem;
     }
@@ -603,14 +539,13 @@ button, .button span, .button span:after {
         position: relative;
         transition: 0.5s;
       }
-      
+          
       .button span:after {
         content: '\00bb';
         position: absolute;
         opacity: 0;
         top: 0;
         right: -20px;
-        transition: 0.5s;
       }
       .button:hover {
         background-color:#9e6429;
@@ -629,13 +564,12 @@ button, .button span, .button span:after {
         display: inline;
     }
 
-    span.menu {
+    #mySidenav {
         display: none;
     }
-    
-    a.skip:focus {
-        top:10px;
-        left:10px;
+
+    span.menu {
+        display: none;
     }
 
     .large_nav_header{
@@ -888,3 +822,35 @@ button, .button span, .button span:after {
         }
     }
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    
+    /*Turn off transition*/
+    .skip a{
+        -webkit-transition: initial; /* sets to default setting */
+        transition: initial; /* sets to default setting */
+    }
+    
+    /*Turn off parallax*/
+    h1.contact-title{
+        background-attachment: initial;
+    }
+        #pic-ani{
+            animation: none;
+    }
+    button, .button span, .button span:after {
+        -webkit-transition: none;
+        transition: none;
+    }
+    .button:hover {
+        background-color: none;
+        transition: none;
+        -webkit-transition: none;
+    
+    
+      }
+    }
