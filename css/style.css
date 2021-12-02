@@ -76,6 +76,14 @@ p.advisory{
     padding-bottom: 10px;
 }
 
+p.no-promo{
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .home_emily {
     padding-bottom: 2rem;
 }
@@ -387,7 +395,7 @@ input[type=text], select, textarea {
 .sidenav a {
     padding: 10px 10px 10px 32px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     display: block;
     transition: 0.3s;
@@ -449,7 +457,7 @@ header{
 
 /* tablet screen */
 @media screen and (min-width: 750px){
-    a.skip {
+    /* a.skip {
         background: white;
         left: 0;
         padding: 6px;
@@ -459,7 +467,7 @@ header{
         transition: top 1s ease-out;
         z-index: 1;
         border-radius: 5px;
-    }
+    } */
 
     nav {
         display: inline;
@@ -565,6 +573,16 @@ header{
     iframe{
         width: 560px;
         height: 315px;
+    }
+
+    p.advisory {
+        font-size: 1.1rem;
+        padding-bottom: 5rem;
+    }
+    
+    p.no-promo{
+        font-size: 1rem;
+        padding-bottom: 3rem;
     }
 
     .wrapper {
