@@ -1,0 +1,984 @@
+/* usual text */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    background-color: #fef6ed;
+}
+
+a.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    border: 4px dotted #9e6429;
+    border-radius: 5px;
+}
+
+a.skip:focus {
+    top:10px;
+    left:10px;
+}
+
+a {
+    color: #2289ce;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+div.logo_center {
+    text-align: center;
+}
+
+img.bobaflow_logo {
+    width: 50%;
+    text-align: center;
+}
+
+img.bobaflow_logo_large {
+    display: none;
+}
+
+div.the_logo > a {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    /* position: sticky; */
+    background: #fef6ed;
+    top: 0px;
+    width: 100%;
+}
+
+
+nav {
+    display: none;
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 2.25rem;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+p, p.boba_subtext{
+    font-size: 1.2rem;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+
+/* about me and home  */
+p.advisory{
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+p.no-promo{
+    font-size: .8rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.home_emily {
+    padding-bottom: 2rem;
+}
+.home_emily2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;;
+}
+.contact_emily {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+/* ann arbor & nyc specific */
+p.boba_subtext {
+    padding-bottom: 20px;
+}
+
+p.bobastore_text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.bobastore_descrip {
+    margin-bottom: 4rem;;
+}
+
+.top3 {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+ }
+
+ .top3 li {
+    padding-left: 1rem;
+    text-indent: -0.75rem;
+}
+
+.top3 li:before {
+    content: "🧋 "
+}
+
+.fa-star-o,
+.checked {
+    color: orange;
+}
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    background-color: #1C567D;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+/* GRID */
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    justify-content: center; 
+}
+
+.chatime_purple, .dingtea_slogan, .slogan_lightbold, 
+.bubbletea_store_quickly, .bubbletea_store_yaya {
+    font-weight: 700;
+}
+
+.dingtea_slogan {
+    color: #AD5A00;
+}
+.chatime_purple{
+    color: #4f1a6c;
+}
+
+.bubbletea_store_quickly {
+    color: #fd4800;
+}
+
+.bubbletea_store_yaya {
+    color: #247028;
+}
+.bobateahouse_img, .chatime_img, .coco_img, .dingtea_img,
+.quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bobateahouse_title, .chatime_title, .coco_title, .dingtea_title,
+.quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
+    grid-column: 1 / -1;
+}
+
+.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
+.vivi_img, .yaya_img {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
+.vivi_img, .yaya_img {
+    grid-column: 1 / -1;
+}
+
+/* about me */
+ a.bubbletea_store_sharetea:link, a.bubbletea_store_sharetea:visited{
+    color: #fd520e;
+    font-weight: 800;
+}
+
+a.bubbletea_store_yaya:link, a.bubbletea_store_yaya:visited{
+    color: #247028;
+    font-weight: 800;
+}
+
+a.bubbletea_store_quickly:link, a.bubbletea_store_quickly:visited{
+    color: #fd4800;
+    font-weight: 800;
+}
+
+a.aboutme_umich:hover{
+    color: #e7820f;
+
+}
+.about_image {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.city-image {
+    padding-top: 1rem;
+    padding-bottom:  2rem;;
+}
+
+p.padtop_advisory {
+    font-size: .7rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+h2.aboutme-h2 {
+    margin-top:4rem;
+}
+/* flipcard */
+.flip-grid {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+  }
+  .flipcard:focus {
+    outline: none;
+    border: 4px dotted #9e6429;
+    border-radius: 5px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+  }
+
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+  }
+
+  .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: #1C567D;
+  }
+  
+  .flip-card-front > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1C567D;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* video */
+.vimeo_video, .google_map{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+  .vimeo_video iframe, .google_map iframe{
+      border-radius: 10px;
+      position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  }
+
+  .google_map {
+    margin-bottom: 2rem;
+  }
+
+  .video-citation {
+    text-align: right;
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+/* footer */
+footer {
+    padding-top: 15vh;
+    text-align: center;
+    
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  textarea {
+    height: 28vh;
+  }
+  
+  input[type=submit] {
+    background-color: #1C567D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  }
+   #subject {
+    height: 20rem;
+  }
+
+  ::placeholder, select {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #9e6429;
+  }
+
+  input[type="checkbox"] {
+    display: inline;
+    width: inherit;
+    margin: 0 1rem;
+  }
+
+  #contact_button {
+      padding-top: 5vh;
+  }
+  
+  /* parallax */
+h1.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/city.jpg);
+    background-attachment: fixed;     
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #1C567D;
+    height: 40vh;
+    background-color: #1C567D;
+
+    border-radius: 5px;
+  }
+  
+  /* animation - homepage*/
+  
+  @-webkit-keyframes pic-ani{
+    0%  {
+      top: 0px;
+      left: 20p;
+    }
+  
+    50%  {
+      top: 45px; 
+      left: 0px;
+    }
+    100% {top: 0px;
+      left: 0px;
+    }
+  } 
+  
+  @keyframes pic-ani{
+    0%  {
+      top: 0px;
+      left: 20p;
+    }
+    
+    50%  {
+      top: 45px; 
+      left: 0px;
+    }
+    100% {top: 0px;
+      left: 0px;
+    }
+  } 
+  
+  #pic-ani{
+    position: relative;
+    animation: pic-ani 6s;
+  }
+
+  .contact_box {
+    padding-top: 3rem;
+}
+#contact_head {
+    padding-top: 3rem
+    }
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7fbee9;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.5s;
+}
+
+.nav_blue {
+    background-color: black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sidenav-link{
+    font-weight: 800;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #FFC342;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 4rem;
+    margin-left: 50px;
+}
+
+/* sidenav active menu */
+.sidenav a.active {
+    color: black;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+span.menu {
+    font-size: 1.75rem;
+    position: absolute;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* dark mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+.dark-mode > header {
+    background-color: black;
+}
+
+.dark-mode > header > span.menu {
+    color: white;
+}
+
+.dark-mode > header > .sidenav {
+    background-color: #2289ce;
+}
+
+.dark-mode > header > .sidenav a {
+    color: white;
+}
+
+.darkmode > header > .sidenav a:hover {
+    color: #FFC342;
+}
+
+.dark-mode > a {
+    color: #ffaa00;
+}
+
+.switch {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .switch div {
+    position: relative;
+    display: block;
+    background: red;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .fa-adjust {
+    transform: rotate(180deg);
+  }
+  
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    background-color: yellow;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  input:checked + .slider {
+    transform: translateX(8px);
+  }
+
+  :root {
+    --navHeight: 70px;
+    --sage: #D2CCA1;
+    --paleSpringBud: #DEDABA;
+    --goldCrayola: #E5C687;
+    --richBlackForeground: #0F1A20;
+    --white: #f8f8f8;
+    --black: #222;
+    --msuGreen: #2D4739;
+    --gray: #eee;
+  }
+  
+  .light-theme {
+    --themeDropDownBg: var(--goldCrayola);
+    --themeIconBorderColor: var(--sage);
+    --navBg: var(--sage);
+    --navLinkHoverBg: var(--paleSpringBud);
+    --mainBg: var(--goldCrayola);
+    --fontColor: var(--black);
+  }
+  
+  .dark-theme {
+    --themeDropDownBg: var(--msuGreen);
+    --themeIconBorderColor: var(--richBlackForeground);
+    --navBg: var(--richBlackForeground);
+    --navLinkHoverBg: var(--msuGreen);
+    --mainBg: var(--msuGreen);
+    --fontColor: var(--white);
+  }
+
+/* tablet screen */
+@media screen and (min-width: 750px){
+
+    a.skip {
+        top: -100px;
+    }
+    
+    a.skip:focus {
+        top:-40px;
+        left:0px;
+    }
+    button {
+        font-size: 1.2rem;
+    }
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+          
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+      }
+      .button:hover {
+        background-color:#9e6429;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+    nav {
+        display: inline;
+    }
+
+    #mySidenav {
+        display: none;
+    }
+
+    span.menu {
+        display: none;
+    }
+
+    .large_nav_header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* img.bobaflow_logo {
+        display: none;
+    } */
+
+    div.logo_center {
+        display: none;
+    }
+
+    .navbar_logo{
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        width: 20%;
+    }
+
+    .bobastore_descrip {
+        margin-bottom: 2rem;;
+    }
+
+    img.bobaflow_logo_large{
+        display: inline-block;
+    }
+    
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header > a.navbar_logo {
+        width: 25%;
+    }
+    header {
+        position: sticky;
+        z-index: 9999;
+    }
+
+    nav li{
+        display:inline;
+        padding-bottom: 10px;
+      }
+    
+    .nav_links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
+    }
+    
+    nav{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+    .nav_item{
+        padding: 10px;
+        font-size: .9rem;
+
+    }
+
+    a:link, a:visited {
+        font-weight: 600;
+        color: #1C567D;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #9e6429;
+        text-decoration: underline;
+        -webkit-text-decoration-style: dotted;
+                text-decoration-style: dotted;
+      }
+    
+    a::selection {
+        outline: none;
+        border: none;
+    }
+    
+    nav .active {
+        color: #FFC342;
+        font-weight: 800;
+        text-decoration: underline 3px;
+        text-transform: uppercase;
+        background-color: #1C567D;
+        padding: 10px;
+    }
+    
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+    p.advisory {
+        font-size: 1.1rem;
+        padding-bottom: 5rem;
+    }
+    
+    p.no-promo{
+        font-size: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .wrapper {
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(9,auto)
+      }
+
+    .bobateahouse_title, .chatime_title, .coco_title, .dingtea_title, .quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
+        grid-column: 2/ span 1;
+        padding-bottom: 5vh;
+    }
+
+    .bobateahouse_img, .chatime_img, .coco_img, .dingtea_img, .quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img{
+        grid-column: 1 / span 1;
+        overflow: hidden;
+    }
+
+    .bubbleology_title, .gongcha_title, .kungfutea_title, .tigersugar_title, .vivi_title, .yaya_title {
+        grid-column: 2/ span 1;
+        padding-bottom: 5vh;
+    }
+
+    .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img{
+        grid-column: 1 / span 1;
+        overflow: hidden;
+    }
+
+    #about_head {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .aboutme {
+        grid-column: 2/ span 1;
+    }
+
+    .city-image {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .about_image {
+        padding-top: 0;
+    }
+
+    #home_head {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        }
+    #home_head2 {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+    .home_emily {
+        grid-column: 1/ span 1;
+        grid-row: 1/-1
+    }
+    .home_text {
+        grid-column: 2/ span 1;
+    }
+
+    .home_emily, .home_emily2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home_emily img {
+        padding-top: 0;
+        width: auto; /* width of container */
+        height: 25rem; /* height of container */
+        object-fit: cover;
+        object-position: 40% 0;
+    }
+
+    .home_emily2 img{
+        padding-top: 0;
+        width: auto; /* width of container */
+        height: 28rem; /* height of container */
+        object-fit: cover;
+        object-position: 60% 0;
+    } 
+
+    .flip-grid{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        margin: 1rem 0;
+        padding: 0 1rem;
+        padding-bottom: 7%; 
+      }
+
+    .contact_box {
+        padding-top: 2rem;
+    }
+    #contact_head {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        }
+
+    .contact_emily {
+        padding: 0;
+    }
+        .container {
+            padding: 0;
+        }
+    footer {
+        padding-top: 10vh;
+    }
+
+    /* larger screen view */
+    @media screen and (min-width: 1400px){
+        body{
+            width:1024px;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+        .nav_item {
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+        iframe {
+            width:100%;
+        }
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    
+    /*Turn off transition*/
+    .skip a{
+        -webkit-transition: initial; /* sets to default setting */
+        transition: initial; /* sets to default setting */
+    }
+    
+    /*Turn off parallax*/
+    h1.contact-title{
+        background-attachment: initial;
+    }
+        #pic-ani{
+            animation: none;
+    }
+    button, .button span, .button span:after {
+        -webkit-transition: none;
+        transition: none;
+    }
+    .button:hover {
+        background-color: none;
+        transition: none;
+        -webkit-transition: none;
+    
+    
+      }
+    }

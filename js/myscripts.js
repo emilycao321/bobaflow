@@ -7,25 +7,14 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-// dark & light mode
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
- }
+// // dark & light mode
+// function myFunction() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+// }
 
-//  const clear = (() => {
-//     const defined = v => v !== null && v !== undefined;
-//     const timeout = setInterval(() => {
-//         const ad = [...document.querySelectorAll('.ad-showing')][0];
-//         if (defined(ad)) {
-//             const video = document.querySelector('iframe');
-//             if (defined(video)) {
-//                 video.currentTime = video.duration;
-//             }
-//         }
-//     }, 500);
-//     return function() {
-//         clearTimeout(timeout);
-//     }
-// })();
+const themeSwitch = document.querySelector('input');
 
+themeSwitch.addEventListener('change', () => {
+  document.body.classList.toggle('dark-theme');
+});
