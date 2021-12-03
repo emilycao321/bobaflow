@@ -93,7 +93,6 @@ p.advisory{
 
 p.no-promo{
     font-size: .8rem;
-    font-style: italic;
     font-weight: 300;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -334,6 +333,13 @@ p.padtop_advisory {
     margin-bottom: 2rem;
   }
 
+  .video-citation {
+    text-align: right;
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+  }
 
 /* footer */
 footer {
