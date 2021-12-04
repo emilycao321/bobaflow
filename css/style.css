@@ -21,6 +21,7 @@
     --button-hover-color: #9e6429;
     --active-background: #1C567D;
     --active-text: #FFC342;
+    --sidenav-hover: #FFC342;
     /* --logo-image: background-image: url(../img/); */
   }
   
@@ -45,6 +46,7 @@
     --button-hover-color: #7fbee9;
     --active-background: #e9ab00;
     --active-text: black;
+    --sidenav-hover: #222;
   }
   img.bobaflow_logo_large {
     filter: var(--logo-image);
@@ -217,7 +219,7 @@ a {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #222;
+    color: var(--sidenav-hover);
 }
 
 /* sidenav active menu */
