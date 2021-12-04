@@ -20,18 +20,13 @@
 
 	gtag('config', 'G-Y0ZR64C9B3');
 	</script>
-	<script src="js/myscripts.js"></script>
 	<title>Bobaflow | New York City</title>
 </head>
-<body class="home">
+
+<body class="light-theme">
 	<header>
-		<a class = "skip" href="#main_content">Skip to Main Content</a>
-		<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
-	<div class="logo_center">
-		<div class="the_logo">
-		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-		</div>
-	</div>
+    <a class = "skip" href="#main_content">Skip to Main Content</a>
+    <span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
 	<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a class="sidenav-link" href="index.html"><span>Home</span></a>
@@ -39,23 +34,72 @@
             <a class="sidenav-link active" href="newyork_boba.html"><span><strong>New York City</strong></span></a>
             <a class="sidenav-link" href="aboutme.html"><span>About Me</span></a>
 			<a class="sidenav-link" href="contact.html"><span>Contact</span></a>
+			
 		</div>
-		
-		<!-- <a class = "skip" href="#main_content">Skip to Main Content</a> -->
-		<div class = "large_nav_header">
-		<a class = "navbar_logo" href = "index.html"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-			<nav>
-				<ul class = "nav_links">
-					<li class="nav_item"><a href = "index.html">Home</a></li>
-					<li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
-					<li class="nav_item"><a href = "newyork_boba.html" class = "active">New York City</a></li>
-					<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
-					<li class="nav_item"><a href = "contact.html" >Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	</header>
+
+            <div class = "large_nav_header">
+                <nav>
+                    <a class = "navbar_logo" href = "index.html" aria-label="Bobaflow logo"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
+                    <ul class = "nav_links">
+                        <li class="nav_item"><a href = "index.html">Home</a></li>
+                        <li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
+                        <li class="nav_item"><a href = "newyork_boba.html" class = "active">New York City</a></li>
+                        <li class="nav_item"><a href = "aboutme.html">About Me</a></li>
+                        <li class="nav_item"><a href = "contact.html">Contact</a></li>
+						<li class ="toggle-toggle">
+							<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="the_checkbox">
+								
+							  <input type="checkbox" id="the_checkbox" name="dark or light mode" placeholder="Toggle"/>
+							  <div class="slider">
+								<svg
+								  xmlns="http://www.w3.org/2000/svg"
+								  width="16"
+								  height="16"
+								  viewBox="0 0 24 24"
+								  fill="none"
+								  stroke="currentColor"
+								  stroke-width="2"
+								  stroke-linecap="round"
+								  stroke-linejoin="round"
+								  class="feather feather-sun"
+								>
+								  <circle cx="12" cy="12" r="5"></circle>
+								  <line x1="12" y1="1" x2="12" y2="3"></line>
+								  <line x1="12" y1="21" x2="12" y2="23"></line>
+								  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+								  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+								  <line x1="1" y1="12" x2="3" y2="12"></line>
+								  <line x1="21" y1="12" x2="23" y2="12"></line>
+								  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+								  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+								</svg>
+								<svg
+								  xmlns="http://www.w3.org/2000/svg"
+								  width="16"
+								  height="16"
+								  viewBox="0 0 24 24"
+								  fill="none"
+								  stroke="currentColor"
+								  stroke-width="2"
+								  stroke-linecap="round"
+								  stroke-linejoin="round"
+								  class="feather feather-moon"
+								>
+								  <path
+									d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+								  ></path>
+								</svg>
+							  </div>
+							  *
+							</label>
+						</div>
+					</li>
+                    </ul>
+					
+                </nav>
+            </div>
+        </header>
 
 	<main id = "main_content">
 		<h1>New York City Bobas</h1>
@@ -80,7 +124,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">120 1/2 1st Ave, New York, NY 10009</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW9CBGJ1ZwokRDKpSxrwSLqE&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW9CBGJ1ZwokRDKpSxrwSLqE&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Bubbleology Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -96,7 +140,7 @@
 									<li>Lavender Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11ggw0ngy7&g2lbs=ALgbXSqxA2HWCaR4BNCnSJwc0icmbK7wLEvUaJ5txkr9ko291f_gJ797EoKesjWPVQ9BbzoW85bc&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=X9SEYYvNJ42pqtsPoqmb-AE&fo_s=OA,AH&orderType=2&sei=CWxiPUfbkJqiERUz_m2Rar7X&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11ggw0ngy7&g2lbs=ALgbXSqxA2HWCaR4BNCnSJwc0icmbK7wLEvUaJ5txkr9ko291f_gJ797EoKesjWPVQ9BbzoW85bc&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=X9SEYYvNJ42pqtsPoqmb-AE&fo_s=OA,AH&orderType=2&sei=CWxiPUfbkJqiERUz_m2Rar7X&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 							</div>
 						</div>
 
@@ -118,7 +162,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">72 Bayard St, New York, NY 10013</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj9erBSdawokRaa7oyCJfuYM&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj9erBSdawokRaa7oyCJfuYM&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Gongcha Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -134,7 +178,7 @@
 									<li>Matcha Milk Tea with Red Bean</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11cn2__kgf&g2lbs=ALgbXSo9UfO2jO2Udp4E-kHYJsiXUKYWSImAJbAh_44Gauf9k9JwLK5v-yGXPCPn0MM0BNlHbm2D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9diEYYvkH8XatQadxq6wDA&fo_s=OA,AH&orderType=1&sei=CQKbsnAKRMq2EQLBqDhNlnAe&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11cn2__kgf&g2lbs=ALgbXSo9UfO2jO2Udp4E-kHYJsiXUKYWSImAJbAh_44Gauf9k9JwLK5v-yGXPCPn0MM0BNlHbm2D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9diEYYvkH8XatQadxq6wDA&fo_s=OA,AH&orderType=1&sei=CQKbsnAKRMq2EQLBqDhNlnAe&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								
 							</div>
 						</div>
@@ -156,7 +200,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">73 Chrystie St, New York, NY 10002</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCdGvAShawokR6l0_uOBqCbo&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCdGvAShawokR6l0_uOBqCbo&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Kung Fu Tea Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -172,7 +216,7 @@
 									<li>Almond Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b5vtcqwc&g2lbs=ALgbXSoxXciB0ziVI7PjD_9-OdCw_-DseYogI_XP3SZF5cXYBfzsD6NGQxWXbfI5psyeLreyqdOZ&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ZtmEYemyMZSC9PwPuNyniAk&fo_s=OA,AH&sei=CUXZv46HzcuPEdLYChdzop7j&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b5vtcqwc&g2lbs=ALgbXSoxXciB0ziVI7PjD_9-OdCw_-DseYogI_XP3SZF5cXYBfzsD6NGQxWXbfI5psyeLreyqdOZ&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ZtmEYemyMZSC9PwPuNyniAk&fo_s=OA,AH&sei=CUXZv46HzcuPEdLYChdzop7j&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 							</div>
 						</div>
 
@@ -194,7 +238,7 @@
 								<h3>Location:<h3> 
 								<p class = "bobastore_text">197 Canal St, New York, NY 10013</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ9QCLCbxbwokRo3uiI3g5IrE&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ9QCLCbxbwokRo3uiI3g5IrE&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Tiger Sugar Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -210,7 +254,7 @@
 									<li>Vanilla Flavored Black Tea Latte with Mochi + Boba & Cream Mousse</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11h_1z9jhw&g2lbs=ALgbXSpxytCrVOiKMY06iIgaEK3R8ln3DMzv10wjgag9f9ePJFOvdEJBTapYr9iSFFrGgsMyO55k&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=SMOFYdr6A8KStAaAmYP4BA&fo_s=OA,AH&orderType=2&sei=CbH48R44o6GbETQjc_KsDdkh&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11h_1z9jhw&g2lbs=ALgbXSpxytCrVOiKMY06iIgaEK3R8ln3DMzv10wjgag9f9ePJFOvdEJBTapYr9iSFFrGgsMyO55k&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=SMOFYdr6A8KStAaAmYP4BA&fo_s=OA,AH&orderType=2&sei=CbH48R44o6GbETQjc_KsDdkh&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Tiger-Sugar-197-Canal-St-5f0652c254dac8009d258c17?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
@@ -231,7 +275,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">49 Bayard St, New York, NY 10013</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj7EjVSZawokRK8iYc3EFGew&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj7EjVSZawokRK8iYc3EFGew&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Vivi Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -247,7 +291,7 @@
 									<li>Blue Galaxy</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/1tfkghd2&g2lbs=ALgbXSoChR5QUpt8XQ3_qtpdPnGhOeG3XPz1XdLYP5adhicHkSnVI9N8aayAPwiNRdBuz-VLBWF5&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ctqEYdanI9qrtQaf9arACw&fo_s=OA,AH&orderType=2&sei=CftFGwty27yEEYPI1XVbAa9D&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/1tfkghd2&g2lbs=ALgbXSoChR5QUpt8XQ3_qtpdPnGhOeG3XPz1XdLYP5adhicHkSnVI9N8aayAPwiNRdBuz-VLBWF5&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ctqEYdanI9qrtQaf9arACw&fo_s=OA,AH&orderType=2&sei=CftFGwty27yEEYPI1XVbAa9D&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 							</div>
 						</div>
 
@@ -267,7 +311,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">51 Chrystie St, New York, NY 10002</p>
 								<div class="google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-ly4SdawokRFPAawZIBq1w&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-ly4SdawokRFPAawZIBq1w&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title ="Yaya Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -283,7 +327,7 @@
 									<li>Second Chance Fruit Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/1tdzs1cv&g2lbs=ALgbXSpfgOzdGBs38TkHHD0pAvIRjFPudTtEoZ1IvPLiRdSrriYF1NdXBdI5PuM0_Gy_ANpd9W57&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ZdeEYfvgOs3WtQav9aaoCQ&fo_s=OA,AH&orderType=2&sei=CbU4rkHunEepEVRJpvuXLnBe&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/1tdzs1cv&g2lbs=ALgbXSpfgOzdGBs38TkHHD0pAvIRjFPudTtEoZ1IvPLiRdSrriYF1NdXBdI5PuM0_Gy_ANpd9W57&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=ZdeEYfvgOs3WtQav9aaoCQ&fo_s=OA,AH&orderType=2&sei=CbU4rkHunEepEVRJpvuXLnBe&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://yayatea.revelup.com/weborder/?establishment=3','_blank')"><span>Order From Yaya Tea</span></button>
 								<p class = "padtop_advisory">*Yaya Tea is not known for bubble teas, but their fruit drinks are so good. I just had to add them to the list for people to try.*</p>
 							</div>
@@ -297,5 +341,6 @@
 		<p>Bobaflow &copy; 2021</p>
 		<p>Made with Love ♥️</p>
 	</footer>
+	<script src="js/myscripts.js"></script>
 </body>
 </html>
