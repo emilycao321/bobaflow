@@ -677,7 +677,7 @@ h1.contact-title{
 @keyframes pic-ani{
   0%  {
     top: 0px;
-    left: 20p;
+    left: 20px;
   }
   
   50%  {
@@ -1111,7 +1111,6 @@ button, .button span, .button span:after {
   transition: none;
 }
 .button:hover {
-  background-color: none;
   transition: none;
   -webkit-transition: none;
 }
