@@ -19,18 +19,13 @@
 
 	gtag('config', 'G-Y0ZR64C9B3');
 	</script>
-	<script src="js/myscripts.js"></script>
 	<title>Bobaflow | Contact</title>
 </head>
-<body class="home">
+
+<body class="light-theme">
 	<header>
-		<a class = "skip" href="#main_content">Skip to Main Content</a>
-		<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
-	<div class="logo_center">
-		<div class="the_logo">
-		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-		</div>
-	</div>
+    <a class = "skip" href="#main_content">Skip to Main Content</a>
+    <span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
 	<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a class="sidenav-link" href="index.html"><span>Home</span></a>
@@ -38,17 +33,68 @@
             <a class="sidenav-link" href="newyork_boba.html"><span>New York City</span></a>
             <a class="sidenav-link" href="aboutme.html"><span>About Me</span></a>
 			<a class="sidenav-link active" href="contact.html"><span><strong>Contact</strong></span></a>
+			
 		</div>
+
 		<div class = "large_nav_header">
-		<a class = "navbar_logo" href = "index.html"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
 			<nav>
+				<a class = "navbar_logo" href = "index.html" aria-label="Bobaflow logo"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
 				<ul class = "nav_links">
 					<li class="nav_item"><a href = "index.html">Home</a></li>
 					<li class="nav_item"><a href = "annarbor_boba.html">Ann Arbor</a></li>
 					<li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
 					<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
 					<li class="nav_item"><a href = "contact.html" class = "active">Contact</a></li>
+					<li class ="toggle-toggle">
+						<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="the_checkbox">
+						  <input type="checkbox" id="the_checkbox" name="dark or light mode" placeholder="Toggle"/>
+						  <div class="slider">
+							<svg
+							  xmlns="http://www.w3.org/2000/svg"
+							  width="16"
+							  height="16"
+							  viewBox="0 0 24 24"
+							  fill="none"
+							  stroke="currentColor"
+							  stroke-width="2"
+							  stroke-linecap="round"
+							  stroke-linejoin="round"
+							  class="feather feather-sun"
+							>
+							  <circle cx="12" cy="12" r="5"></circle>
+							  <line x1="12" y1="1" x2="12" y2="3"></line>
+							  <line x1="12" y1="21" x2="12" y2="23"></line>
+							  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+							  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+							  <line x1="1" y1="12" x2="3" y2="12"></line>
+							  <line x1="21" y1="12" x2="23" y2="12"></line>
+							  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+							  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+							</svg>
+							<svg
+							  xmlns="http://www.w3.org/2000/svg"
+							  width="16"
+							  height="16"
+							  viewBox="0 0 24 24"
+							  fill="none"
+							  stroke="currentColor"
+							  stroke-width="2"
+							  stroke-linecap="round"
+							  stroke-linejoin="round"
+							  class="feather feather-moon"
+							>
+							  <path
+								d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+							  ></path>
+							</svg>
+						  </div>
+						  *
+						</label>
+					</div>
+				</li>
 				</ul>
+				
 			</nav>
 		</div>
 	</header>
@@ -68,7 +114,7 @@
 		<form action="https://formspree.io/f/mgedwdko" method="POST">
 			<label>
 				Name:
-				<input name="text" placeholder="Enter your name" name="Name" required>
+				<input name="text" placeholder="Enter your name" required>
 			</label>
 			<br>
 			<label>
@@ -79,7 +125,7 @@
 			<label>
 				Subject:
 			</label>
-				<select name="Subject" required>
+				<select name="Subject" aria-label="Subject for Email"required>
 					<option value="question">Question</option>
 					<option value="issue">Issue with Website</option>
 					<option value="other">Other</option>
@@ -104,5 +150,6 @@
 		<p>Bobaflow &copy; 2021</p>
 		<p>Made with Love ♥️</p>
 	</footer>
+	<script src="js/myscripts.js"></script>
 </body>
 </html>
