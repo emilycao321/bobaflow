@@ -1,29 +1,16 @@
+//side navigation
+// Set the width of the side navigation to 250px on open
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
+// Set the width of the side navigation to 0 on close
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-/**
- * Stop all iframes or HTML5 <video>'s from playing
- */
- var stopVideos = function () {
-	var videos = document.querySelectorAll('iframe, video');
-	Array.prototype.forEach.call(videos, function (video) {
-		if (video.tagName.toLowerCase() === 'video') {
-			video.pause();
-		} else {
-			var src = video.src;
-			video.src = src;
-		}
-	});
-};
 
 //dark and light mode
-
 // Get the theme toggle input
 const themeToggle = document.querySelector(
   '.theme-switch input[type="checkbox"]'
@@ -53,5 +40,6 @@ function switchTheme(e) {
     localStorage.setItem("theme", "light");
   }
 }
-// Add an event listener to the theme toggle, which will switch the theme
+
+// An event listener to the theme toggle, which will switch the theme
 themeToggle.addEventListener("change", switchTheme, false);
