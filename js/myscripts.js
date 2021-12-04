@@ -7,17 +7,21 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-var stopVideo = function ( element ) {
-	var iframe = element.querySelector( 'iframe');
-	var video = element.querySelector( 'video' );
-	if ( iframe ) {
-		var iframeSrc = iframe.src;
-		iframe.src = iframeSrc;
-	}
-	if ( video ) {
-		video.pause();
-	}
+/**
+ * Stop all iframes or HTML5 <video>'s from playing
+ */
+ var stopVideos = function () {
+	var videos = document.querySelectorAll('iframe, video');
+	Array.prototype.forEach.call(videos, function (video) {
+		if (video.tagName.toLowerCase() === 'video') {
+			video.pause();
+		} else {
+			var src = video.src;
+			video.src = src;
+		}
+	});
 };
+
 //dark and light mode
 
 // Get the theme toggle input
