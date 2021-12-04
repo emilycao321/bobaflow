@@ -697,10 +697,15 @@ h1.contact-title{
 
 
   @media screen and (min-width: 750px){
+    a:hover {
+      color: #9e6429;
+
+    }
 
     #mySidenav {
       display: none;
     }
+    
 .nav_item {
   display: inline;
 }
