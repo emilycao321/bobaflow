@@ -212,7 +212,7 @@ a {
 .sidenav .sidenav-link{
     font-weight: 800;
     color: var(--side-nav-links);
-    background-color: #b04f00;
+    background-color: var(--side-nav-bg);
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -243,7 +243,7 @@ span.menu {
     right: 25px;
     font-size: 4rem;
     margin-left: 50px;
-    background-color: #b04f00;
+    background-color: var(--side-nav-bg);
     
 }
 
