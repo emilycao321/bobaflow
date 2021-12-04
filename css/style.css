@@ -17,6 +17,7 @@
     --sharetea-color: #fd520e;
     --flip-card-color:#1C567D;
     --logo-image: grayscale(100%);
+    --hover-color: #9e6429;
     /* --logo-image: background-image: url(../img/); */
   }
   
@@ -37,6 +38,7 @@
     --sharetea-color: #ff9369;
     --flip-card-color: #d3710e;
     --logo-image: invert(100%);
+    --hover-color: white;
   }
   img.bobaflow_logo_large {
     filter: var(--logo-image);
@@ -697,9 +699,12 @@ h1.contact-title{
 
 
   @media screen and (min-width: 750px){
-    a:hover {
-      color: #9e6429;
 
+    a:hover {
+      color: var(--hover-color);
+      text-decoration: underline;
+      -webkit-text-decoration-style: dotted;
+              text-decoration-style: dotted;
     }
 
     #mySidenav {
@@ -859,13 +864,6 @@ nav li{
 
 a:link, a:visited {
   font-weight: 600;
-}
-
-a:hover {
-  color: white;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
 }
 
 a::selection {
