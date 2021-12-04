@@ -7,18 +7,12 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-// // dark & light mode
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
+videos = document.querySelectorAll("video"); 
+for(video of videos) {
+  video.pause(); 
+}
 
-// const themeSwitch = document.querySelector('input');
-
-// themeSwitch.addEventListener('change', () => {
-//   document.body.classList.toggle('dark-theme');
-//   switchButton.classList.toggle('active');
-// });
+//dark and light mode
 
 // Get the theme toggle input
 const themeToggle = document.querySelector(
