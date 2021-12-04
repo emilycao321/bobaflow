@@ -156,7 +156,7 @@ a.skip {
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
-    border: 4px dotted #9e6429;
+    border: 2px dotted #9e6429;
     border-radius: 5px;
     color:#1C567D;
 }
@@ -697,6 +697,10 @@ h1.contact-title{
 
 
   @media screen and (min-width: 750px){
+
+    #mySidenav {
+      display: none;
+    }
 .nav_item {
   display: inline;
 }
