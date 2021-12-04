@@ -20,41 +20,84 @@
 
 	gtag('config', 'G-Y0ZR64C9B3');
 	</script>
-	<script src="js/myscripts.js"></script>
 	<title>Bobaflow | Ann Arbor</title>
 </head>
-<body class="home">
+
+<body class="light-theme">
 	<header>
-		<a class = "skip" href="#main_content">Skip to Main Content</a>
-		<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
-	<div class="logo_center">
-		<div class="the_logo">
-		<a href = "index.html"><img class = "bobaflow_logo" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-		<span class="fa-solid fa-circle-half-stroke"></span>
-	</div>
-	</div>
+    <a class = "skip" href="#main_content">Skip to Main Content</a>
+    <span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
 	<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a class="sidenav-link" href="index.html"><span>Home</span></a>
-            <a class="sidenav-link active" href="annarbor_boba.html"><span><strong>Ann Arbor</strong></span></a>
+            <a class="sidenav-link  active" href="annarbor_boba.html"><span><strong>Ann Arbor</strong></span></a>
             <a class="sidenav-link" href="newyork_boba.html"><span>New York City</span></a>
             <a class="sidenav-link" href="aboutme.html"><span>About Me</span></a>
-			<a class="sidenav-link" href="contact.html"><span>Contact</span></a>
+			<a class="sidenav-link" href="contact.html"><span>Contact</span></a>	
 		</div>
-		<div class = "large_nav_header">
-		<a class = "navbar_logo" href = "index.html"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
-			<nav>
-				<ul class = "nav_links">
-					<li class="nav_item"><a href = "index.html">Home</a></li>
-					<li class="nav_item"><a href = "annarbor_boba.html" class = "active">Ann Arbor</a></li>
-					<li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
-					<li class="nav_item"><a href = "aboutme.html">About Me</a></li>
-					<li class="nav_item"><a href = "contact.html">Contact</a></li>
-				</ul>
-				<i class="fa-solid fa-circle-half-stroke"></i>
-			</nav>
-		</div>
-	</header>
+
+            <div class = "large_nav_header">
+                <nav>
+                    <a class = "navbar_logo" href = "index.html" aria-label="Bobaflow logo"><img class = "bobaflow_logo_large" src = "img/bobaflow.png" alt ="Bobflow Logo"></a>
+					<ul class = "nav_links">
+                        <li class="nav_item"><a href = "index.html">Home</a></li>
+                        <li class="nav_item"><a href = "annarbor_boba.html" class = "active">Ann Arbor</a></li>
+                        <li class="nav_item"><a href = "newyork_boba.html">New York City</a></li>
+                        <li class="nav_item"><a href = "aboutme.html">About Me</a></li>
+                        <li class="nav_item"><a href = "contact.html">Contact</a></li>
+						<li class ="toggle-toggle">
+							<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="the_checkbox">
+							  <input type="checkbox" id="the_checkbox" name="dark or light mode" placeholder="Toggle"/>
+							  <div class="slider">
+								<svg
+								  xmlns="http://www.w3.org/2000/svg"
+								  width="16"
+								  height="16"
+								  viewBox="0 0 24 24"
+								  fill="none"
+								  stroke="currentColor"
+								  stroke-width="2"
+								  stroke-linecap="round"
+								  stroke-linejoin="round"
+								  class="feather feather-sun"
+								>
+								  <circle cx="12" cy="12" r="5"></circle>
+								  <line x1="12" y1="1" x2="12" y2="3"></line>
+								  <line x1="12" y1="21" x2="12" y2="23"></line>
+								  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+								  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+								  <line x1="1" y1="12" x2="3" y2="12"></line>
+								  <line x1="21" y1="12" x2="23" y2="12"></line>
+								  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+								  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+								</svg>
+								<svg
+								  xmlns="http://www.w3.org/2000/svg"
+								  width="16"
+								  height="16"
+								  viewBox="0 0 24 24"
+								  fill="none"
+								  stroke="currentColor"
+								  stroke-width="2"
+								  stroke-linecap="round"
+								  stroke-linejoin="round"
+								  class="feather feather-moon"
+								>
+								  <path
+									d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+								  ></path>
+								</svg>
+							  </div>
+							  *
+							</label>
+						</div>
+					</li>
+                    </ul>
+					
+                </nav>
+            </div>
+        </header>
 
 	<main id = "main_content">
 		<h1>Ann Arbor Bobas</h1>
@@ -78,7 +121,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">3780 Jackson Rd Suite C, Ann Arbor, MI 48103</p>
 								<div class="google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJmawYKXuxPIgR8Z6KB-LD6W8&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJmawYKXuxPIgR8Z6KB-LD6W8&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title = "Bobateahouse Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -94,7 +137,7 @@
 									<li>Peach Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://www.orderbobateahouseannaarbor.com/','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://www.orderbobateahouseannaarbor.com/','_blank')"><span>Order Here</span></button>
 							</div>
 					</div>
 
@@ -114,7 +157,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">340 Maynard St, Ann Arbor, MI 48104</p>
 								<div class="google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_UIfFzKvPIgRZ4HhclRwqC0&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_UIfFzKvPIgRZ4HhclRwqC0&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Chatime google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -131,7 +174,7 @@
 								</ul>
 								<h3>Order Online?</h3>
 								
-								<div><button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11fksl5lzm&g2lbs=ALgbXSpPHOqlIjGYb-b6QMzeqHxY9IkYdT7L2UDAGAu-oDwnWdYwyKCJhYy6ou6PgHC5wvj0RBd0&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=eACEYarpCPSQxc8PiuSzkAc&fo_s=OA,AH&orderType=2&sei=CeDYmGKx9bmrEQxeZGhqB3TW&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<div><button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11fksl5lzm&g2lbs=ALgbXSpPHOqlIjGYb-b6QMzeqHxY9IkYdT7L2UDAGAu-oDwnWdYwyKCJhYy6ou6PgHC5wvj0RBd0&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=eACEYarpCPSQxc8PiuSzkAc&fo_s=OA,AH&orderType=2&sei=CeDYmGKx9bmrEQxeZGhqB3TW&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								</div>
 								<div><button class="button" onclick=" window.open('https://order.snackpass.co/Chatime-5fc9292d62dd3000d6dcd676?openAddressSelectorIfChain=true','_blank')"><span>Order on Snackpass</span></button>
 								</div>
@@ -153,7 +196,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">1731 Plymouth Rd, Ann Arbor, MI 48105</p>
 								<div class="google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJX5jci-WvPIgRjJfxHya18Do&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJX5jci-WvPIgRjJfxHya18Do&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Coco Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -188,7 +231,7 @@
 								<h3>Location:<h3> 
 								<p class = "bobastore_text">607 E William St, Ann Arbor, MI 48104</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdd5bFYGvPIgRY7lDArdv1h8&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdd5bFYGvPIgRY7lDArdv1h8&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Dingtea Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -204,7 +247,7 @@
 									<li>Hazelnut Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j4y8t0wy&g2lbs=ALgbXSpzyge4LXUPcFHt6a3SttGpvEJOTjM1j7KynZVauqyQg0CyuuC3HrlUYTuzftENjmLHSGy4&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9_6DYc-0Kte6tQalz7OQAg&fo_s=OA,AH&sei=CQrVmVpD5wWZEelrZ6L2sdzw&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11j4y8t0wy&g2lbs=ALgbXSpzyge4LXUPcFHt6a3SttGpvEJOTjM1j7KynZVauqyQg0CyuuC3HrlUYTuzftENjmLHSGy4&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=9_6DYc-0Kte6tQalz7OQAg&fo_s=OA,AH&sei=CQrVmVpD5wWZEelrZ6L2sdzw&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 							</div>
 						</div>
 						<div class="quickly_img">
@@ -223,7 +266,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">1220 S University Ave #100, Ann Arbor, MI 48104</p>
 								<div class="google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEeygVK2vPIgRMsk06KhNKak&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEeygVK2vPIgRMsk06KhNKak&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Quickly Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -239,7 +282,7 @@
 									<li>Panda Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11hpgtm8gc&g2lbs=ALgbXSoWKenTFjQLnjTFDmrw5yhhBrg_f36Bpt0BCX8DpuXH2hTnGqCtyZExw2RXqiDT8WXUEal-&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=Yv-DYaHmEpm2tAa4zp3oCg&sei=CSPcJCriuDS-EfWNrjpL1yRS&utm_campaign&utm_source=search&addressId&orderType=2&partnerId=02904582899329029890&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA%2CAH&dineInLocationId','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11hpgtm8gc&g2lbs=ALgbXSoWKenTFjQLnjTFDmrw5yhhBrg_f36Bpt0BCX8DpuXH2hTnGqCtyZExw2RXqiDT8WXUEal-&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=Yv-DYaHmEpm2tAa4zp3oCg&sei=CSPcJCriuDS-EfWNrjpL1yRS&utm_campaign&utm_source=search&addressId&orderType=2&partnerId=02904582899329029890&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA%2CAH&dineInLocationId','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Quickly-Boba-Cafe-Ann-Arbor-5fe0ea1037e52e00da1666bb?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
@@ -259,7 +302,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">310 S State St, Ann Arbor, MI 48104</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ83zkdFSvPIgRJ-Xse_fsqqA&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ83zkdFSvPIgRJ-Xse_fsqqA&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Sharetea Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -275,7 +318,7 @@
 									<li>Okinawa Milk Tea with Mini Pearls</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11qlj8m65t&g2lbs=ALgbXSoqCS3DqhlU-lK9tw0V-niPU6u3D7__E2cNXiknj07-78mPIncjhheSYept-awmCsP1Ghl1&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=PP-DYb72L5CDtQb7sYvoCg&fo_s=OA,AH&sei=CdtXGyk2_GqQEQXuRfl_1-B-&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11qlj8m65t&g2lbs=ALgbXSoqCS3DqhlU-lK9tw0V-niPU6u3D7__E2cNXiknj07-78mPIncjhheSYept-awmCsP1Ghl1&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=PP-DYb72L5CDtQb7sYvoCg&fo_s=OA,AH&sei=CdtXGyk2_GqQEQXuRfl_1-B-&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Sharetea-5f83195dfc988e00d26f6732','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
@@ -295,7 +338,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">1205 S University Ave, Ann Arbor, MI 48104</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJR1c2RUSuPIgRr_8kTG3A6Io&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJR1c2RUSuPIgRr_8kTG3A6Io&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="Sweeting Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -311,7 +354,7 @@
 									<li>Piña Colada Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b6_n69rm&g2lbs=ALgbXSrqepfSdpZnUD6Ac635Ea3JFQnLArUqRBuLa72hkRZkNoRkdXsvAzsvZXYGfOevEtJq30iz&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=kv-DYcOTG4q6tAbU5Y6IAQ&fo_s=OA,AH&orderType=2&sei=CdYXGz0lOvCaEXUKdsOg3caH&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11b6_n69rm&g2lbs=ALgbXSrqepfSdpZnUD6Ac635Ea3JFQnLArUqRBuLa72hkRZkNoRkdXsvAzsvZXYGfOevEtJq30iz&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=kv-DYcOTG4q6tAbU5Y6IAQ&fo_s=OA,AH&orderType=2&sei=CdYXGz0lOvCaEXUKdsOg3caH&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://order.snackpass.co/Sweeting-1205-S-University-Ave-5f888d8d64aedb00c7b4ca64?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
@@ -329,7 +372,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">535 E Liberty St, Ann Arbor, MI 48104</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJna2PurmvPIgRLJYXX0wiOtc&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJna2PurmvPIgRLJYXX0wiOtc&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="TeaNinja Google Map"></iframe>
 								</div>
 								<h3>Rating</h3>
 								<p class = "bobastore_text">
@@ -364,7 +407,7 @@
 								<h3>Location:</h3> 
 								<p class = "bobastore_text">522 E William St, Ann Arbor, MI 48104</p>
 								<div class = "google_map">
-									<iframe width="600" height="450" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfxa8iCavPIgRhgCyBTAzYDQ&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA"></iframe>
+									<iframe aria-hidden="true" width="600" height="450" role="none" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfxa8iCavPIgRhgCyBTAzYDQ&key=AIzaSyBE0bUdfOatkTYv-7dei9s_awU6Rl6nIfA" title="UniTea Google Map"></iframe>
 
 								</div>
 								<h3>Rating</h3>
@@ -381,7 +424,7 @@
 									<li>Pumpkin Spice Milk Tea</li>
 								</ul>
 								<h3>Order Online?</h3>
-								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11rgbjnq5y&g2lbs=ALgbXSoLOFW0W3RBllG8of3YkRWy1F8vdFh3YOEfgLUR2Aqq1eYVyUCB8tUG4-peIQAv8zkWE71b&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=5f-DYbzbDo3ctQaxq5Aw&fo_s=OA,AH&orderType=2&sei=CefnbmLCR5W7Eb4T7v_A54te&utm_campaign&utm_source=search','_blank')"><span>Order Online</span></button>
+								<button class="button" onclick=" window.open('https://food.google.com/chooseprovider?restaurantId=/g/11rgbjnq5y&g2lbs=ALgbXSoLOFW0W3RBllG8of3YkRWy1F8vdFh3YOEfgLUR2Aqq1eYVyUCB8tUG4-peIQAv8zkWE71b&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWwP9igWZeWQMczq7voErUdXMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUOzJVpjPL1YMfaXTPp5KXh-OAE%3D&gei=5f-DYbzbDo3ctQaxq5Aw&fo_s=OA,AH&orderType=2&sei=CefnbmLCR5W7Eb4T7v_A54te&utm_campaign&utm_source=search','_blank')"><span>Order Here</span></button>
 								<br><button class="button" onclick=" window.open('https://order.snackpass.co/UniTea-60ec8043846d0400ca195999?openAddressSelectorIfChain=true','_blank')"><span>Order On Snackpass</span></button>
 							</div>
 						</div>
@@ -395,5 +438,6 @@
 		<p>Bobaflow &copy; 2021</p>
 		<p>Made with Love ♥️</p>
 	</footer>
+	<script src="js/myscripts.js"></script>
 </body>
 </html>
