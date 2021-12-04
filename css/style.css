@@ -18,14 +18,17 @@
     --flip-card-color:#1C567D;
     --logo-image: grayscale(100%);
     --hover-color: #9e6429;
+    --button-hover-color: #9e6429;
+    --active-background: #1C567D;
+    --active-text: #FFC342;
     /* --logo-image: background-image: url(../img/); */
   }
   
   [data-theme="dark"] {
     --bg-color: rgb(6, 6, 6);
     --font-color: #efefef;
-    --side-nav-bg: #1C567D;
-    --the-link: #d97817;
+    --side-nav-bg: #b04f00;
+    --the-link: #e9ab00;
     --side-nav-links: #fef6ed;
     --toggle-button: #7fbee9;
     --dark-light-toggle: rgb(57, 57, 57);
@@ -39,6 +42,9 @@
     --flip-card-color: #d3710e;
     --logo-image: invert(100%);
     --hover-color: white;
+    --button-hover-color: #7fbee9;
+    --active-background: #e9ab00;
+    --active-text: black;
   }
   img.bobaflow_logo_large {
     filter: var(--logo-image);
@@ -206,12 +212,12 @@ a {
 .sidenav .sidenav-link{
     font-weight: 800;
     color: var(--side-nav-links);
-    background-color: #1C567D;
+    background-color: #b04f00;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #FFC342;
+    color: #222;
 }
 
 /* sidenav active menu */
@@ -237,7 +243,7 @@ span.menu {
     right: 25px;
     font-size: 4rem;
     margin-left: 50px;
-    background-color: #1C567D;
+    background-color: #b04f00;
     
 }
 
@@ -340,8 +346,8 @@ p.bobastore_text {
     margin-bottom: 20px;
 }
 
-.bobastore_descrip {
-    margin-bottom: 4rem;;
+.more_descrip {
+    margin-bottom: 4rem;
 }
 
 .top3 {
@@ -374,14 +380,14 @@ button {
   text-align: center;
   display: inline-block;
   font-size: 1rem;
-  padding: 1rem 1.5rem;
+  padding: .9rem 1.4rem;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
 
 /* GRID */
-.wrapper {
+.wrapper, .nyc_wrapper {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto;
@@ -558,9 +564,9 @@ h2.aboutme-h2 {
       height: 100%;
 }
 
-.google_map {
+/* .google_map {
   margin-bottom: 2rem;
-}
+} */
 
 .video-citation {
   text-align: right;
@@ -728,7 +734,8 @@ footer{
         left:0px;
     }
     button {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: 800;
     }
     .button span {
       cursor: pointer;
@@ -744,9 +751,9 @@ footer{
       top: 0;
       right: -20px;
     }
-    /* .button:hover {
-      background-color:#9e6429;
-    } */
+    .button:hover {
+      background-color:var(--button-hover-color);
+    }
 
     .button:hover span {
       padding-right: 25px;
@@ -772,7 +779,7 @@ footer{
     }
 
     .theme-switch-wrapper {
-      margin-top:-35px;
+      margin-top:-28px;
       margin-left:-10px;
       margin-bottom: 10px;
     }
@@ -837,7 +844,7 @@ footer{
   }
 
   .bobastore_descrip {
-    margin-bottom: 2rem;;
+    margin-bottom: 0;
 }
 
 img.bobaflow_logo_large{
@@ -876,11 +883,11 @@ a::selection {
 }
 
 nav .active {
-  color: #FFC342;
+  color: var(--active-text);
   font-weight: 800;
   text-decoration: underline 3px;
   text-transform: uppercase;
-  background-color: #1C567D;
+  background-color: var(--active-background);
   padding: 10px;
 }
     
@@ -901,28 +908,44 @@ p.no-promo{
 
 .wrapper {
   grid-gap: 2rem;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(9,auto)
 }
 
+.nyc_wrapper {
+  grid-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12,auto)
+}
+
 .bobateahouse_title, .chatime_title, .coco_title, .dingtea_title, .quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
-  grid-column: 2/ span 1;
-  padding-bottom: 5vh;
+  grid-column: 3/ span 5;
+  /* padding-bottom: 5vh; */
 }
 
 .bobateahouse_img, .chatime_img, .coco_img, .dingtea_img, .quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img{
-  grid-column: 1 / span 1;
+  grid-column: 1 / span 2;
   overflow: hidden;
 }
 
-.bubbleology_title, .gongcha_title, .kungfutea_title, .tigersugar_title, .vivi_title, .yaya_title {
-  grid-column: 2/ span 1;
-  padding-bottom: 5vh;
+/* .bubbleology_title, .gongcha_title, .kungfutea_title, .tigersugar_title, .vivi_title, .yaya_title {
+  grid-column: 3/ span 5;
+} */
+  
+  .descrip_location {
+  grid-column: 3/ span 5;
 }
 
 .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img{
-  grid-column: 1 / span 1;
+  grid-column: 1 / span 2;
   overflow: hidden;
+}
+
+/* .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img{ */
+  .more_descrip {
+  grid-column: 3 / span 5;
+  overflow: hidden;
+  margin-bottom: 4rem;
 }
 
 #about_head {
@@ -1024,7 +1047,7 @@ p.no-promo{
   }
 
 footer{
-  margin-top: 2rem;
+  margin-top: -2rem;
   margin-bottom: 4rem;
 }
 
@@ -1033,7 +1056,7 @@ footer{
 /* larger screen view */
 @media screen and (min-width: 1400px){
   body{
-      width:1024px;
+      width:1300px;
       margin: 0 auto;
       margin-top: 3rem;
   }
@@ -1041,8 +1064,23 @@ footer{
       padding: 20px;
       font-size: 1.2rem;
   }
-  iframe {
-      width:100%;
+
+  .wrapper {
+    grid-gap: 3rem;
+  }
+  .nyc_wrapper{
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,auto);
+    grid-gap: 2rem;
+  }
+
+  .descrip_location {
+    grid-column: 3/ span 4;
+    padding-bottom: 6rem;
+  }
+
+  .more_descrip {
+    grid-column: 7/ span 2;
   }
 }
 }
@@ -1074,7 +1112,11 @@ button, .button span, .button span:after {
   background-color: none;
   transition: none;
   -webkit-transition: none;
-
-
+}
+.flip-card-inner, .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner, .flip-card:active .flip-card-inner {
+  transition: none;
+}
+.slider, .slider:before, .slider svg {
+  transition: none;
 }
 }
