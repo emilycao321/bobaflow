@@ -694,6 +694,10 @@ h1.contact-title{
 
 }
 
+footer{
+  margin-bottom: 2rem;
+}
+
 
 
 
@@ -1018,9 +1022,13 @@ p.no-promo{
   .container {
       padding: 0;
   }
-footer {
-  padding-top: 10vh;
+
+footer{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
+
+
 
 /* larger screen view */
 @media screen and (min-width: 1400px){
