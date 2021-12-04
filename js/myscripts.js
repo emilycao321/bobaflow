@@ -7,11 +7,17 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-videos = document.querySelectorAll("video"); 
-for(video of videos) {
-  video.pause(); 
-}
-
+var stopVideo = function ( element ) {
+	var iframe = element.querySelector( 'iframe');
+	var video = element.querySelector( 'video' );
+	if ( iframe ) {
+		var iframeSrc = iframe.src;
+		iframe.src = iframeSrc;
+	}
+	if ( video ) {
+		video.pause();
+	}
+};
 //dark and light mode
 
 // Get the theme toggle input
