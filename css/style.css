@@ -22,7 +22,6 @@
     --active-background: #1C567D;
     --active-text: #FFC342;
     --sidenav-hover: #FFC342;
-    /* --logo-image: background-image: url(../img/); */
   }
   
   [data-theme="dark"] {
@@ -77,7 +76,6 @@
     position: absolute;
     width: 60px;
     text-align: center;
-
   }
   
   .theme-switch input {
@@ -289,7 +287,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 800;
     padding-bottom: 10px;
 }
@@ -297,11 +295,12 @@ h2 {
 h3 {
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
-p, p.boba_subtext{
+p, p.boba_subtext, p.bobastore_text, ul.top3 > li {   
     font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 img {
@@ -309,20 +308,20 @@ img {
 }
 
 
-
 /* about me and home  */
-p.advisory{
-    font-size: .8rem;
-    font-style: italic;
+p.advisory, p.no-promo{
+    font-size: 1rem;
+    line-height: 1.2rem;
     font-weight: 300;
-    padding-bottom: 10px;
+    margin-bottom: 2rem;
 }
 
-p.no-promo{
-    font-size: .8rem;
-    font-weight: 300;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+p.advisory{
+    font-style: italic;
+}
+
+p.no-promo {
+  margin-top: 2rem;
 }
 
 .home_emily {
@@ -340,11 +339,10 @@ p.no-promo{
 
 /* ann arbor & nyc specific */
 p.boba_subtext {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 p.bobastore_text {
-    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -468,8 +466,9 @@ a.aboutme_umich:hover{
 }
 
 p.padtop_advisory {
-  font-size: .7rem;
+  font-size: .9rem;
   font-style: italic;
+  line-height: 1.2rem;
   font-weight: 300;
   padding-top: 50px;
 }
@@ -480,7 +479,7 @@ h2.aboutme-h2 {
 
 /* flipcard */
 .flip-grid {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
@@ -488,7 +487,7 @@ h2.aboutme-h2 {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  margin-bottom: 5rem;;
+  margin-bottom: 2rem;
 
 }
 .flipcard:focus {
@@ -572,10 +571,10 @@ h2.aboutme-h2 {
 
 .video-citation {
   text-align: right;
-  font-size: .8rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 /* footer */
@@ -702,6 +701,11 @@ h1.contact-title{
 
 }
 
+.vimeo_video_text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 footer{
   margin-bottom: 2rem;
 }
@@ -794,6 +798,8 @@ footer{
         margin-left: 10%;
         margin-right: 10%;
     }
+
+
 
     header {
         position: sticky;
@@ -900,13 +906,14 @@ iframe{
 
 p.advisory {
   font-size: 1.1rem;
-  padding-bottom: 5rem;
-}
-
-p.no-promo{
-  font-size: 1rem;
+  line-height: 1.5rem;
   padding-bottom: 3rem;
 }
+
+/* p.no-promo{
+  font-size: 1rem;
+  padding-bottom: 3rem;
+} */
 
 .wrapper {
   grid-gap: 2rem;
@@ -1026,7 +1033,8 @@ p.no-promo{
   grid-gap: 1rem;
   margin: 1rem 0;
   padding: 0 1rem;
-  padding-bottom: 7%; 
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .contact_box {
@@ -1052,6 +1060,7 @@ footer{
   margin-top: -2rem;
   margin-bottom: 4rem;
 }
+  }
 
 
 
@@ -1084,8 +1093,23 @@ footer{
   .more_descrip {
     grid-column: 7/ span 2;
   }
+
+  #contact_head {
+    grid-template-columns: repeat(7,1fr);
+  }
+
+  .contact_emily {
+    grid-column: 1/ span 3;
+  }
+  .email_form {
+    grid-column: 4 / span 4;
+  }
+  textarea {
+    height: 55vh;
+  }
+
 }
-}
+
 
 @media screen and (prefers-reduced-motion: reduce){
 /*Turn off scroll*/
