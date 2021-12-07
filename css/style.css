@@ -276,7 +276,7 @@ section.logo_center {
 }
 
 img.bobaflow_logo {
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
@@ -697,22 +697,22 @@ footer{
   margin-bottom: 2rem;
 }
 
-.links_and_toggle {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.theme-switch-wrapper {
-  margin-top:-28px;
-  margin-left:-10px;
-  margin-bottom: 10px;
-}
-
 
 
   @media screen and (min-width: 750px){
+
+    .links_and_toggle {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .theme-switch-wrapper {
+      margin-top:-28px;
+      margin-left:-10px;
+      margin-bottom: 10px;
+    }
 
     p, p.boba_subtext, p.bobastore_text, ul.top3 > li {   
       font-size: 1.1rem;
