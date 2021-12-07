@@ -1217,53 +1217,8 @@ button, .button span, .button span:after {
   transition: none;
 }
 
-nav li{
-  display:inline;
-  padding-bottom: 10px;
-}
-
-.nav_links {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: right;
-}
-
-nav{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-a:link, a:visited {
-  font-weight: 600;
-  color: #1C567D;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #9e6429;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-}
-
-a::selection {
-  outline: none;
-  border: none;
-}
-
-nav .active {
-  color: #9e6429;
-  font-weight: 800;
-  text-decoration: underline 3px;
-  text-transform: uppercase;
-
-}
-
 .sidenav a, .sidenav  {
   transition: none;
 }
 
-}
 }
