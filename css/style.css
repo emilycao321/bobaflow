@@ -732,6 +732,8 @@ footer{
     
 .nav_item {
   display: inline;
+  padding: 6px;
+  font-size: .85rem;
 }
 
      a.skip {
@@ -744,8 +746,8 @@ footer{
     }
     button {
         font-size: 1rem;
-        font-weight: 800;
     }
+
     .button span {
       cursor: pointer;
       display: inline-block;
@@ -782,6 +784,8 @@ footer{
 
     img.bobaflow_logo_large{
         display: inline-block;
+        width: 100%;
+        text-align: left;
     }
     
     body {
@@ -822,16 +826,6 @@ footer{
     margin-bottom: 0;
 }
 
-img.bobaflow_logo_large{
-    width: 100%;
-    text-align: left;
-}
-
-.nav_item{
-    padding: 6px;
-    font-size: .85rem;
-
-}
 
 a:link, a:visited {
   font-weight: 600;
@@ -882,11 +876,6 @@ p.advisory {
 .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img  {
   grid-column: 1 / span 2;
   overflow: hidden;
-}
-
-
-  .descrip_location {
-  grid-column: 3/ span 5;
 }
 
   .more_descrip {
@@ -940,26 +929,24 @@ p.advisory {
 }
 
 
-.home_emily img {
+.home_emily img, .home_emily2 img {
   padding-top: 0;
   width: auto; /* width of container */
-  height: 25rem; /* height of container */
   object-fit: cover;
+}
+.home_emily img {
+  height: 25rem; /* height of container */
   object-position: 40% 0;
 }
 
 .home_emily2 img{
-  padding-top: 0;
-  width: auto; /* width of container */
   height: 28rem; /* height of container */
-  object-fit: cover;
   object-position: 60% 0;
 } 
 
 .flip-grid{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-gap: 1rem;
   margin: 1rem 0;
   padding: 0 1rem;
   margin-bottom: 2rem;
@@ -1016,7 +1003,7 @@ textarea {
     grid-template-rows: repeat(9,auto);
     grid-gap: 3rem;
   }
-  
+
   .nyc_wrapper{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(6,auto);
