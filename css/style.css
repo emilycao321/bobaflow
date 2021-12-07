@@ -12,9 +12,9 @@
     --button-color: #1C567D;
     --dingtea-color:#AD5A00;
     --chatime-color: #4f1a6c;
-    --quickly-color: #fd4800;
+    --quickly-color: #a83e00;
     --yaya-color: #247028;
-    --sharetea-color: #fd520e;
+    --sharetea-color: #a83000;
     --flip-card-color:#1C567D;
     --logo-image: grayscale(100%);
     --hover-color: #9e6429;
@@ -39,7 +39,7 @@
     --quickly-color: #ff7843;
     --yaya-color: #51bd56;
     --sharetea-color: #ff9369;
-    --flip-card-color: #d3710e;
+    --flip-card-color: #b35f0b;
     --logo-image: invert(100%);
     --hover-color: white;
     --button-hover-color: #7fbee9;
@@ -479,17 +479,18 @@ h2.aboutme-h2 {
 
 /* flipcard */
 .flip-grid {
+  display: grid;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 2rem;
-
+.flip-card h3 {
+  font-size: 1rem;
 }
+
 .flipcard:focus {
   outline: none;
   border-radius: 5px;
@@ -552,11 +553,11 @@ h2.aboutme-h2 {
 }
 
 /* video */
-.vimeo_video, .google_map{
+.vimeo_video, .google_map, .cantomando-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
 }
-.vimeo_video iframe, .google_map iframe{
+.vimeo_video iframe, .google_map iframe, .cantomando-video iframe{
     border-radius: 10px;
     position: absolute;
       top: 0;
@@ -713,8 +714,12 @@ footer{
 
 
 
-
   @media screen and (min-width: 750px){
+
+    p, p.boba_subtext, p.bobastore_text, ul.top3 > li {   
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+  }
 
     a:hover {
       color: var(--hover-color);
@@ -799,8 +804,6 @@ footer{
         margin-right: 10%;
     }
 
-
-
     header {
         position: sticky;
         z-index: 9999;
@@ -829,12 +832,6 @@ footer{
         flex-direction: row;
         justify-content: space-between;
       }
-
-    .nav_item{
-        padding: 10px;
-        font-size: .9rem;
-
-    }
 
     
     section.logo_center {
@@ -876,8 +873,8 @@ nav li{
   }
 
 .nav_item{
-    padding: 10px;
-    font-size: .9rem;
+    padding: 6px;
+    font-size: .85rem;
 
 }
 
@@ -910,20 +907,16 @@ p.advisory {
   padding-bottom: 3rem;
 }
 
-/* p.no-promo{
-  font-size: 1rem;
-  padding-bottom: 3rem;
-} */
 
 .wrapper {
   grid-gap: 2rem;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(9,auto)
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(18,auto)
 }
 
 .nyc_wrapper {
   grid-gap: 2rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12,auto)
 }
 
@@ -1027,14 +1020,17 @@ p.advisory {
 } 
 
 .flip-grid{
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
   margin: 1rem 0;
   padding: 0 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.flip-card h3 {
+  font-size: .85rem;
 }
 
 .contact_box {
@@ -1060,29 +1056,35 @@ footer{
   margin-top: -2rem;
   margin-bottom: 4rem;
 }
-  }
+
+textarea {
+  height:20vh;
+}
+}
+
 
 
 
 /* larger screen view */
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1024px){
   body{
-      width:1300px;
-      margin: 0 auto;
+      margin-left: 5rem;
+      margin-right: 5rem;
       margin-top: 3rem;
   }
   .nav_item {
-      padding: 20px;
+      padding: 16px;
       font-size: 1.2rem;
   }
 
   .wrapper {
+    grid-template-rows: repeat(9,auto);
     grid-gap: 3rem;
   }
   .nyc_wrapper{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(6,auto);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
   }
 
   .descrip_location {
@@ -1105,11 +1107,78 @@ footer{
     grid-column: 4 / span 4;
   }
   textarea {
-    height: 55vh;
+    height: 30vh;
   }
 
+  #aboutme-grid {
+    grid-auto-flow: dense;
+  }
+
+  .spread-culture, #aboutme-grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 2rem;
+
+  }
+
+  #aboutme-grid.reverse> .city-image{
+    grid-column: 4 / span 4;
+  }
+
+  #aboutme-grid.reverse > .myfavorites-text{
+    grid-column: 1 / span 3;
+  }
+
+  .spread-culture-text {
+    grid-column: 1/ span 3;
+  }
+
+  .cantomando-text {
+    grid-column: 4/ span 4;
+    
+  }
+
+  .flip-card h3 {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  p, p.boba_subtext, p.bobastore_text, ul.top3 > li {   
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
 }
 
+@media screen and (min-width: 1400px){
+  body{
+    width:1300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+textarea {
+  height: 45vh;
+}
+
+.flip-card h3 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+p, p.boba_subtext, p.bobastore_text, ul.top3 > li {   
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+
+}
 
 @media screen and (prefers-reduced-motion: reduce){
 /*Turn off scroll*/
