@@ -340,11 +340,7 @@ p.no-promo {
 
 
 /* ann arbor & nyc specific */
-p.boba_subtext {
-    margin-bottom: 20px;
-}
-
-p.bobastore_text {
+p.boba_subtext, p.bobastore_text{
     margin-bottom: 20px;
 }
 
@@ -416,23 +412,14 @@ button {
   color: var(--yaya-color)
 }
 .bobateahouse_img, .chatime_img, .coco_img, .dingtea_img,
-.quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img {
-  grid-column: 1/-1;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.bobateahouse_title, .chatime_title, .coco_title, .dingtea_title,
-.quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
-  grid-column: 1 / -1;
-}
-
-.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
+.quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img, .bubbleology_img,
+ .gongcha_img, .kungfutea_img, .tigersugar_img,
 .vivi_img, .yaya_img {
   grid-column: 1/-1;
   margin-bottom: 20px;
   overflow: hidden;
 }
+
 
 .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img,
 .vivi_img, .yaya_img {
@@ -445,10 +432,7 @@ a.bubbletea_store_sharetea:link, a.bubbletea_store_sharetea:visited{
   font-weight: 800;
 }
 
-a.bubbletea_store_yaya:link, a.bubbletea_store_yaya:visited{
-  font-weight: 800;
-}
-
+a.bubbletea_store_yaya:link, a.bubbletea_store_yaya:visited, 
 a.bubbletea_store_quickly:link, a.bubbletea_store_quickly:visited{
   font-weight: 800;
 }
@@ -464,7 +448,7 @@ a.aboutme_umich:hover{
 
 .city-image {
   padding-top: 1rem;
-  padding-bottom:  2rem;;
+  padding-bottom:  2rem;
 }
 
 p.padtop_advisory {
@@ -700,7 +684,7 @@ h1.contact-title{
   padding-top: 3rem;
 }
 #contact_head {
-  padding-top: 3rem
+  padding-top: 3.5rem
 
 }
 
@@ -713,6 +697,18 @@ footer{
   margin-bottom: 2rem;
 }
 
+.links_and_toggle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.theme-switch-wrapper {
+  margin-top:-28px;
+  margin-left:-10px;
+  margin-bottom: 10px;
+}
 
 
 
@@ -730,7 +726,7 @@ footer{
               text-decoration-style: dotted;
     }
 
-    #mySidenav {
+    #mySidenav, span.menu {
       display: none;
     }
     
@@ -783,19 +779,6 @@ footer{
         margin-top: auto;
         width: 20%;
     }
- 
-    .links_and_toggle {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .theme-switch-wrapper {
-      margin-top:-28px;
-      margin-left:-10px;
-      margin-bottom: 10px;
-    }
 
     img.bobaflow_logo_large{
         display: inline-block;
@@ -835,21 +818,6 @@ footer{
         justify-content: space-between;
       }
 
-    
-    section.logo_center {
-        display: none;
-    }
-    span.menu {
-      display: none;
-    }
-
-  .navbar_logo{
-      display: block;
-      margin-bottom: auto;
-      margin-top: auto;
-      width: 20%;
-  }
-
   .bobastore_descrip {
     margin-bottom: 0;
 }
@@ -858,21 +826,6 @@ img.bobaflow_logo_large{
     width: 100%;
     text-align: left;
 }
-
-body {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-header {
-    position: sticky;
-    z-index: 9999;
-}
-
-nav li{
-    display:inline;
-    padding-bottom: 10px;
-  }
 
 .nav_item{
     padding: 6px;
@@ -921,30 +874,21 @@ p.advisory {
   grid-template-rows: repeat(12,auto)
 }
 
-.bobateahouse_title, .chatime_title, .coco_title, .dingtea_title, .quickly_title, .sharetea_title, .sweeting_title, .teaninja_title, .unitea_title {
+.descrip_location {
   grid-column: 3/ span 5;
-  /* padding-bottom: 5vh; */
 }
 
-.bobateahouse_img, .chatime_img, .coco_img, .dingtea_img, .quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img{
+.bobateahouse_img, .chatime_img, .coco_img, .dingtea_img, .quickly_img, .sharetea_img, .sweeting_img, .teaninja_img, .unitea_img,
+.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img  {
   grid-column: 1 / span 2;
   overflow: hidden;
 }
 
-/* .bubbleology_title, .gongcha_title, .kungfutea_title, .tigersugar_title, .vivi_title, .yaya_title {
-  grid-column: 3/ span 5;
-} */
-  
+
   .descrip_location {
   grid-column: 3/ span 5;
 }
 
-.bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img{
-  grid-column: 1 / span 2;
-  overflow: hidden;
-}
-
-/* .bubbleology_img, .gongcha_img, .kungfutea_img, .tigersugar_img, .vivi_img, .yaya_img{ */
   .more_descrip {
   grid-column: 3 / span 5;
   overflow: hidden;
@@ -960,7 +904,7 @@ p.advisory {
   padding-bottom: 1rem;
 }
 
-.aboutme {
+.aboutme, .home_text {
   grid-column: 2/ span 1;
 }
 
@@ -973,7 +917,7 @@ p.advisory {
   padding-top: 0;
 }
 
-#home_head {
+#home_head, #home_head2 {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: auto auto;
@@ -981,23 +925,13 @@ p.advisory {
   padding-top: 2rem;
   padding-bottom: 2rem;
   }
-#home_head2 {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  padding-top: 2rem;
-      padding-bottom: 2rem;
-  }
 
 .home_emily {
   grid-column: 1/ span 1;
   grid-row: 1/-1;
   padding-bottom: 0rem;
 }
-.home_text {
-  grid-column: 2/ span 1;
-}
+
 
 .home_emily, .home_emily2 {
   display: flex;
@@ -1048,12 +982,9 @@ p.advisory {
   padding-bottom: 2rem;
   }
 
-.contact_emily {
+.contact_emily, .container {
   padding: 0;
 }
-  .container {
-      padding: 0;
-  }
 
 footer{
   margin-top: -2rem;
@@ -1081,9 +1012,11 @@ textarea {
   }
 
   .wrapper {
+    grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(9,auto);
     grid-gap: 3rem;
   }
+  
   .nyc_wrapper{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(6,auto);
@@ -1109,6 +1042,7 @@ textarea {
   .email_form {
     grid-column: 4 / span 4;
   }
+
   textarea {
     height: 30vh;
   }
@@ -1124,21 +1058,12 @@ textarea {
 
   }
 
-  #aboutme-grid.reverse> .city-image{
+  #aboutme-grid.reverse> .city-image, .cantomando-text {
     grid-column: 4 / span 4;
   }
 
-  #aboutme-grid.reverse > .myfavorites-text{
+  #aboutme-grid.reverse > .myfavorites-text, .spread-culture-text{
     grid-column: 1 / span 3;
-  }
-
-  .spread-culture-text {
-    grid-column: 1/ span 3;
-  }
-
-  .cantomando-text {
-    grid-column: 4/ span 4;
-    
   }
 
   .flip-card h3 {
@@ -1213,11 +1138,7 @@ button, .button span, .button span:after {
 .flip-card-inner, .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner, .flip-card:active .flip-card-inner {
   transition: none;
 }
-.slider, .slider:before, .slider svg {
-  transition: none;
-}
-
-.sidenav a, .sidenav  {
+.slider, .slider:before, .slider svg, .sidenav a, .sidenav {
   transition: none;
 }
 
